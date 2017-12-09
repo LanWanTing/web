@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/* 
+ * CSS Document 
+ * $Web: 作品集$
+ * $Author: Tina Lan $
+ * $Date: 2015-01-31(六)$
+ */
+
+/* 寬度大於1650時 */
+@media only screen and (min-width: 1650px) and (max-width: 1920px)
+{	
+#logo { margin:20px 0 0 30px;}
+/*內頁*/
+/*頁面基本設定*/
+
+#pImage, #pGraphic, #pWeb, #pElse{width:1280px; padding-top:30px;}
+
+/*左邊作品說明*/
+.pLeft{width:325px; height:600px; margin-left:20px;}
+
+/*作品相簿*/
+.viewRight{width:840px; margin-right:20px;}
+.profileSlideWrap { width:840px;}
+.imgWrap { width:840px; height:760px;}
+
+/* 外框 */
+#bannerWrap {  width:840px; height:760px;}
+
+
+/* 大圖 */
+#bannerWrap .main-slider-content {width:840px; height:760px;}
+#bannerWrap .sliders-wrap-inner {width:840px; height:760px;}
+#bannerWrap .sliders-wrap-inner li {height:760px;}
+#bannerWrap .sliders-wrap-inner li img {width:840px; height:760px;}
+
+/* 小圖 */
+#bannerWrap .navigator-content {bottom:40px; left:-400px;}
+
+/* 按鈕 */
+.imgWrap .button-next, .imgWrap .button-previous{left:-380px; bottom:135px;}
+.imgWrap .button-previous{ left:-400px;}
+
+/*返回列表*/
+.btnBack{ width:115px; height:25px; text-align:center; z-index:50; position: relative; padding-top:5px; float:left; bottom:-130px; left:20px;}
+}
