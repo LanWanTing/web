@@ -276,20 +276,20 @@ body{ margin:0; padding:0;}
 	padding-top:20px;
 	float:right;
 }
-.profileSlideWrap { width:550px;}
-.imgWrap { position:relative; width:550px; height:515px;}
+.profileSlideWrap { width:100%;}
+.imgWrap { position:relative; width:100%;}
 
 /* 外框 */
-#bannerWrap { position:relative; width:550px; height:515px;}
+#bannerWrap { position:relative; width:100%;}
 #bannerWrap a:focus { outline:none;} /* Firefox, Google */
 
 /* 讀取 */
-#bannerWrap .preload { position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; text-align:center; background-color:#fff; z-index:5;}
-#bannerWrap .preload div { width:100%; height:100%; overflow:hidden; background:url(../images/loading.gif) 50% 50% no-repeat;}
+#bannerWrap .preload { position:absolute; top:0; left:0; width:100%; overflow:hidden; text-align:center; background-color:#fff; z-index:5;}
+#bannerWrap .preload div { width:100%; overflow:hidden; background:url(../images/loading.gif) 50% 50% no-repeat;}
 /* 大圖 */
-#bannerWrap .main-slider-content { position:relative; margin:0; padding:0; width:550px; height:515px; overflow:hidden;}
-#bannerWrap .sliders-wrap-inner { margin:0; padding:0; position:absolute; width:550px; height:515px; overflow:hidden; list-style:none;}
-#bannerWrap .sliders-wrap-inner li { float:left; position:relative; margin:0; padding:0; height:515px; overflow:hidden;}
+#bannerWrap .main-slider-content { position:relative; margin:0; padding:0; width:100%;  overflow:hidden;}
+#bannerWrap .sliders-wrap-inner { margin:0; padding:0; position:absolute; width:100%;  overflow:hidden; list-style:none;}
+#bannerWrap .sliders-wrap-inner li { float:left; position:relative; margin:0; padding:0; height:100%; overflow:hidden;}
 #bannerWrap .sliders-wrap-inner li img { padding:0;}
 
 /* 小圖 */

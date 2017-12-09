@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<meta name="keywords" content="藍宛亭,LAN,DESIGN,PROFILE">
+<meta name="description" content="TINA LAN PROFILE">
+<title>TINA LAN PROFILE│首頁</title>
+<link href="favicon.ico" rel="icon">
+<link href="favicon.ico" rel="shortcut icon">
+<link href="apple-touch-icon.png" rel="apple-touch-icon">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/plugins/jQuery/jquery-1.8.3.js"></script>
+<script src="js/plugins/jQuery/jquery.nav-3.0.0.js"></script>
+<script src="js/common.js"></script>
+<script>
+jQuery(document).ready(function(e) {
+	// 首頁一頁式效果
+  var $win = jQuery(window);
+  
+  $win.on('resize', function(e) {
+    wh = $win.height();
+    jQuery('#Image, #Graphic, #Web, #Else').height(900);
+
+  }).trigger('resize');
+  
+  
+  jQuery('#Header ul').onePageNav({
+    currentClass: 'current',
+    changeHash: false,
+    scrollSpeed: 500,
+    scrollThreshold: 1,
+    easing: 'swing',
+  });
+});
+</script>
+<script>
+jQuery(document).ready(function(e) {
+	// 列表滑出效果
+  jQuery('.List ul li').hover(function() {
+    jQuery(".cover", this).stop(false, true).fadeIn();	
+  }, function() {
+    jQuery(".cover", this).stop(false, true).fadeOut();
+  });
+});
+</script>
+</head>
+
+<body>
+<!--頁首-->
+<div id="Header">
+	<div class="bg">
+    <div class="iMenu">
+        <ul>
+            <li class="m1"><a href="#Image" title="形象設計"></a></li>
+            <li class="m2"><a href="#Graphic" title="平面設計"></a></li>
+            <li class="m3"><a href="#Web" title="網頁設計"></a></li>
+            <li class="m4"><a href="#Else" title="其他作品"></a></li>
+            <li class="m5"><a href="#Designer" title="設計師"></a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+<!--內容-->
+<div id="iMain">
+	<!--形象設計STAR-->
+	<div id="iMainImage">
+        <div id="Image" class="main">
+        	<div class="title"></div>
+            <div class="List">
+            	<ul>
+                <li><img src="images/image/i_DrgusLogo.jpg" alt="藥物濫用認輔志工 標誌設計" width="250" height="172">
+                	<div class="cover name"><a href="image1.html" title="藥物濫用認輔志工 標誌設計">藥物濫用認輔志工<br>標誌設計</a></div>
+                </li>
+                <li><img src="images/image/i_12thLogo.jpg" alt="十二年國教 標誌設計" width="250" height="172">
+                	<div class="cover name"><a href="image2.html" title="十二年國教 標誌設計">十二年國教<br>標誌設計</a></div>
+                </li>
+                <li><img src="images/image/i_JD.jpg" alt="鶼鰈情深 文字設計" width="250" height="172">
+                	<div class="cover name"><a href="image3.html" title="鶼鰈情深 文字設計">鶼鰈情深<br>文字設計</a></div>
+                </li>
+                <li><img src="images/image/i_WaS.jpg" alt="靜觀「奇」變 文字設計" width="250" height="172">
+                	<div class="cover name"><a href="image4.html" title="靜觀「奇」變 文字設計">靜觀「奇」變<br>文字設計</a></div>
+                </li>
+                <li><img src="images/image/i_PeonyDress.jpg" alt="PEONY DRESS.C 標誌設計" width="250" height="172">
+                	<div class="cover name"><a href="image5.html" title="PEONY DRESS.C 標誌設計">PEONY DRESS.C<br>標誌設計</a></div>
+                </li>
+                <li><img src="images/image/i_flower.jpg" alt="芊芳花藝 CIS設計" width="250" height="172">
+                	<div class="cover name"><a href="image6.html" title="芊芳花藝 CIS設計">芊芳花藝<br>CIS設計</a></div>
+                </li>
+                <li><img src="images/image/i_Bumper.jpg" alt="Bumper團購商店 CIS設計" width="250" height="172">
+                	<div class="cover name"><a href="image7.html" title="Bumper團購商店 CIS設計">Bumper團購商店<br>CIS設計</a></div>
+                </li>
+                <li><img src="images/imageNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                <li><img src="images/imageNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+    <!--形象設計END-->
+    
+    <!--平面設計STAR-->
+    <div id="iMainGraphic">
+        <div id="Graphic" class="main">
+        <div class="title"></div>
+            <div class="List">
+            	<ul>
+                <li><img src="images/graphic/i_DTTower.jpg" alt="左營龍虎塔 色彩印象明信片設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic1.html" title="左營龍虎塔 色彩印象明信片設計">左營龍虎塔<br>色彩印象明信片設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_ice.jpg" alt="31冰淇淋 促銷DM設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic2.html" title="31冰淇淋 促銷DM設計">31冰淇淋<br>促銷DM設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_card.jpg" alt="新年賀卡設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic3.html" title="新年賀卡設計">新年賀卡設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_Myself.jpg" alt="我 印象海報設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic4.html" title="我 印象海報設計">我<br>印象海報設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_newcity.jpg" alt="新城市 印象海報設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic5.html" title="新城市 印象海報設計">新城市<br>印象海報設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_water.jpg" alt="水是生命 系列海報設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic6.html" title="水是生命 系列海報設計">水是生命<br>系列海報設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_thirst.jpg" alt="渴與死亡 海報設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic7.html" title="渴與死亡 海報設計">渴與死亡<br>海報設計</a></div>
+                </li>
+                <li><img src="images/graphic/calendar/i_calendar.jpg" alt="2011兔年月曆設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic8.html" title="2011兔年月曆設計">2011兔年<br>月曆設計</a></div>
+                </li>
+                <li><img src="images/graphic/i_exotic.jpg" alt="EXOTIC美食雜誌設計" width="250" height="172">
+                	<div class="cover name"><a href="graphic9.html" title="EXOTIC美食 雜誌設計">EXOTIC 美食<br>雜誌設計</a></div>
+                </li>
+                
+                </ul>
+            </div>
+        </div>
+	</div>
+    <!--平面設計END-->
+    
+    <!--網頁設計STAR-->
+    <div id="iMainWeb">
+        <div id="Web" class="main">
+        <div class="title"></div>
+            <div class="List">
+            	<ul>
+                <li><img src="images/web/i_flowerweb.jpg" alt="芊芳花藝 網頁設計" width="250" height="172">
+                	<div class="cover name"><a href=".././cf_flower/index.html" title="芊芳花藝 網頁設計" target="_blank">芊芳花藝<br>網頁設計</a></div>
+                </li>
+                <li><img src="images/web/i_guitar.jpg" alt="J&D 樂器購物網 網頁設計" width="250" height="172">
+                	<div class="cover name"><a href=".././jd_guitar/index.html" title="J&D 樂器購物網 網頁設計" target="_blank">J&amp;D 樂器購物網<br>網頁設計</a></div>
+                </li>
+                <li><img src="images/webNone.jpg" alt="言葉部屋 網頁設計" width="250" height="172">
+                	<div class="cover name"><a href="web3.html" title="言葉部屋 網頁設計">言葉部屋<br>網頁設計</a></div>
+                </li>
+                <li><img src="images/webNone.jpg" alt="PEONY DRESS 網頁設計" width="250" height="172">
+                	<div class="cover name"><a href="#" title="PEONY DRESS 網頁設計">PEONY DRESS<br>網頁設計</a></div>
+                </li>
+                <li><img src="images/web/existence/i_existence.jpg" alt="求生e智 災害防治平台<" width="250" height="172">
+                	<div class="cover name"><a href=".././existence/index.htm" title="求生e智 災害防治平台" target="_blank">求生e智<br>災害防治平台</a></div>
+                </li>
+                <li><img src="images/webNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                <li><img src="images/webNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                <li><img src="images/webNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                <li><img src="images/webNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+    <!--網頁設計END-->
+    
+    <!--其他作品STAR-->
+    <div id="iMainElse">
+        <div id="Else" class="main">
+        <div class="title"></div>
+            <div class="List">
+            	<ul>
+                <li><img src="images/else/i_Deram.jpg" alt="台南二空圓夢樹屋 形象短片" width="250" height="172">
+                	<div class="cover name"><a href="else1.html" title="台南二空圓夢樹屋 形象短片">台南二空圓夢樹屋<br>形象短片</a></div>
+                </li>
+                <li><img src="images/else/i_mobile.jpg" alt="求生e智手機操作篇" width="250" height="172">
+                	<div class="cover name"><a href="else2.html" title="求生e智 手機操作篇">求生e智<br>手機操作篇</a></div>
+                </li>
+                <li><img src="images/else/i_marrow.jpg" alt="求生e智 形象影片" width="250" height="172">
+                	<div class="cover name"><a href="else3.html" title="求生e智 形象影片">求生e智<br>形象影片</a></div>
+                </li>
+                <li><img src="images/else/i_bird.jpg" alt="BIRD 香水瓶設計" width="250" height="172">
+                	<div class="cover name"><a href="else4.html" title="BIRD 香水瓶設計">BIRD<br>香水瓶設計</a></div>
+                </li>
+                <li><img src="images/else/i_seven.jpg" alt="七宗罪  巧克力包裝設計" width="250" height="172">
+                	<div class="cover name"><a href="else5.html" title="七宗罪  巧克力包裝設計">七宗罪<br>巧克力包裝設計</a></div>
+                </li>
+                <li><img src="images/else/i_leather.jpg" alt="皮革 商品攝影" width="250" height="172">
+                	<div class="cover name"><a href="else6.html" title="皮革 商品攝影">皮革<br>商品攝影</a></div>
+                </li>
+                <li><img src="images/else/i_flower.jpg" alt="花卉 商品攝影" width="250" height="172">
+                	<div class="cover name"><a href="else7.html" title="花卉 商品攝影">花卉<br>商品攝影</a></div>
+                </li>
+                <li><img src="images/else/i_silver.jpg" alt="銀飾 商品攝影" width="250" height="172">
+                	<div class="cover name"><a href="else8.html" title="銀飾 商品攝影">銀飾<br>商品攝影</a></div>
+                </li>
+                <li><img src="images/elseNone.jpg" alt="" width="250" height="172">
+                	<!--<div class="cover name"><a href="#" title="05">PEONY DRESS.C<br>標誌設計</a></div>-->
+                </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+    <!--其他作品END-->
+</div>
+<!--頁尾-->
+<div id="Footer">
+	<div class="bg"> 
+	<div class="iFooter">COPYRIGHT&nbsp;&nbsp;&copy;&nbsp;&nbsp;TINA LAN PROFILE.&nbsp;&nbsp;&nbsp;&nbsp;ALL RIGHTS RESERVED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESIGN BY TINA LAN</div>
+    </div>
+</div>
+    
+</body>
+</html>
