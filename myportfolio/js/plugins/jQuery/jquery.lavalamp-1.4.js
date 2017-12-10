@@ -9,7 +9,7 @@
  * Copyright (c) 2008, 2009, 2010, 2012 Jolyon Terwilliger, jolyon@nixbox.com
  * Source code Copyright (c) 2008, 2009, 2010, 2012
  * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
+ * http://www.opensource.org/licenses/mit-license.html
  * http://www.gnu.org/licenses/gpl.html
  *
  * credits to Guillermo Rauch and Ganeshji Marwaha (gmarwaha.com) for previous editions

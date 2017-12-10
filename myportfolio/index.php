@@ -42,16 +42,16 @@ jQuery(document).ready(function(e) {
 <!--header-->
 <header id="iheader">
   <div class="wrap">
- 	<h1 id="logo"><a href="./" title="Blue Sky"><img src="images/logo.png" width="220" alt"Tina Lan Portfolio"></a></h1>
+ 	<h1 id="logo"><a href="./" title="Tina LAN"><img src="images/logo.png" width="220" alt"Tina Lan Portfolio"></a></h1>
     <div id="menuRight">
       <nav>
         <ul id="menu">
-          <li class="m1"><a href="index.php" title="ALL" ></a></li>
-          <li class="m2"><a href="image.php" title="IMAGE DESIGN"></a></li>
-          <li class="m3"><a href="graphic.php" title="GRAPHIC DESIGN"></a></li>
-          <li class="m4"><a href="web.php" title="WEB DESIGN" class="m4"></a></li>
-          <li class="m5"><a href="else.php" title="ELSE DESIGN" class="m5"></a></li>
-          <li class="m6"><a href="designer.php" title="DESIGNER" class="m6"></a></li>
+          <li class="m1"><a href="index.html" title="ALL" ></a></li>
+          <li class="m2"><a href="image.html" title="IMAGE DESIGN"></a></li>
+          <li class="m3"><a href="graphic.html" title="GRAPHIC DESIGN"></a></li>
+          <li class="m4"><a href="web.html" title="WEB DESIGN" class="m4"></a></li>
+          <li class="m5"><a href="else.html" title="ELSE DESIGN" class="m5"></a></li>
+          <li class="m6"><a href="designer.html" title="DESIGNER" class="m6"></a></li>
         </ul>
       </nav>
     </div>
@@ -67,7 +67,7 @@ jQuery(document).ready(function(e) {
     <!--105-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_peony.jpg">
-      <a href="image5.php" class="info" title="PEONY DRESS.C">
+      <a href="image5.html" class="info" title="PEONY DRESS.C">
       <div class="mask">
         <table>
             <tr class="view75">
@@ -80,7 +80,7 @@ jQuery(document).ready(function(e) {
     <!--107-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_bumper.jpg">
-      <a href="image7.php" class="info" title="Bumper Store">
+      <a href="image7.html" class="info" title="Bumper Store">
       <div class="mask">
         <table>
             <tr class="view70">
@@ -93,7 +93,7 @@ jQuery(document).ready(function(e) {
     <!--404-->
     <div class="item item-portfolio pd nopd">
       <img src="images/else/else_bird.jpg">
-      <a href="else4.php" class="info" title="BIRD Series Perfume">
+      <a href="else4.html" class="info" title="BIRD Series Perfume">
       <div class="mask">
         <table>
             <tr class="view70">
@@ -106,7 +106,7 @@ jQuery(document).ready(function(e) {
     <!--206-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_myself.jpg">
-      <a href="graphic6.php" class="info" title="Myself">
+      <a href="graphic6.html" class="info" title="Myself">
       <div class="mask">
         <table>
             <tr class="view80">
@@ -119,7 +119,7 @@ jQuery(document).ready(function(e) {
     <!--408-->
     <div class="item item-portfolio pd">
       <img src="images/else/else_silver.jpg">
-      <a href="else8.php" class="info" title="Silver">
+      <a href="else8.html" class="info" title="Silver">
       <div class="mask">
         <table>
             <tr class="view70">
@@ -132,7 +132,7 @@ jQuery(document).ready(function(e) {
     <!--210-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_water.jpg">
-      <a href="graphic10.php" class="info" title="Thirst and Death">
+      <a href="graphic10.html" class="info" title="Thirst and Death">
       <div class="mask">
         <table>
             <tr class="view70">
@@ -145,7 +145,7 @@ jQuery(document).ready(function(e) {
     <!--212-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_exotic.jpg">
-      <a href="graphic12.php" class="info" title="EXCTIC">
+      <a href="graphic12.html" class="info" title="EXCTIC">
       <div class="mask">
         <table>
             <tr class="view70">
@@ -158,7 +158,7 @@ jQuery(document).ready(function(e) {
      <!--207-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_ncity.jpg">
-      <a href="graphic7.php" class="info" title="New City Impression">
+      <a href="graphic7.html" class="info" title="New City Impression">
       <div class="mask">
         <table>
             <tr class="view80">
@@ -171,7 +171,7 @@ jQuery(document).ready(function(e) {
     <!--201-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_zy.jpg">
-       <a href="graphic1.php" class="info" title="Dragon Tiger Tower">
+       <a href="graphic1.html" class="info" title="Dragon Tiger Tower">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -184,7 +184,7 @@ jQuery(document).ready(function(e) {
     <!--211-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_2011.jpg">
-      <a href="graphic11.php" class="info" title="2011 Calendar">
+      <a href="graphic11.html" class="info" title="2011 Calendar">
        <div class="mask">
         <table>
             <tr class="view80">
@@ -210,7 +210,7 @@ jQuery(document).ready(function(e) {
     <!--302-->
     <div class="item item-portfolio pd">
       <img src="images/web/web_flowerweb.jpg">
-      <a href="http://www.tinalan.com/cf_flower/index.php" class="info" title="芊芳花藝形象網站" target="_blank">
+      <a href="http://www.tinalan.com/cf_flower/index.html" class="info" title="芊芳花藝形象網站" target="_blank">
        <div class="mask">
         <table>
             <tr class="view80">
@@ -223,7 +223,7 @@ jQuery(document).ready(function(e) {
     <!--202-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_ice.jpg">
-      <a href="graphic2.php" class="info" title="Baskin Robbins">
+      <a href="graphic2.html" class="info" title="Baskin Robbins">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -236,7 +236,7 @@ jQuery(document).ready(function(e) {
     <!--303-->
     <div class="item item-portfolio pd">
       <img src="images/web/web_lhouse.jpg">
-      <a href="http://www.tinalan.com/leaf/index.php" class="info" target="_blank" title="言葉部屋形象網站">
+      <a href="http://www.tinalan.com/leaf/index.html" class="info" target="_blank" title="言葉部屋形象網站">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -249,7 +249,7 @@ jQuery(document).ready(function(e) {
      <!--106-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_flower.jpg">
-      <a href="image6.php" class="info" title="芊芳花藝">
+      <a href="image6.html" class="info" title="芊芳花藝">
        <div class="mask">
         <table>
             <tr class="view70">
@@ -262,7 +262,7 @@ jQuery(document).ready(function(e) {
     <!--304-->
     <div class="item item-portfolio pd">
       <img src="images/web/web_guitar.jpg">
-      <a href="http://www.tinalan.com/leaf/jd.php" class="info" target="_blank" title="J&D 樂器購物網">
+      <a href="http://www.tinalan.com/leaf/jd.html" class="info" target="_blank" title="J&D 樂器購物網">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -275,7 +275,7 @@ jQuery(document).ready(function(e) {
     <!--209-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_death.jpg">
-      <a href="graphic9.php" class="info" title="J&D 樂器購物網">
+      <a href="graphic9.html" class="info" title="J&D 樂器購物網">
        <div class="mask">
         <table>
             <tr class="view70">
@@ -288,7 +288,7 @@ jQuery(document).ready(function(e) {
     <!--401-->
      <div class="item item-portfolio pd">
       <img src="images/else/else_dream.jpg">
-      <a href="else1.php" class="info" title="圓夢樹屋">
+      <a href="else1.html" class="info" title="圓夢樹屋">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -301,7 +301,7 @@ jQuery(document).ready(function(e) {
     <!--402-->
     <div class="item item-portfolio pd">
       <img src="images/else/else_cell.jpg">
-      <a href="else2.php" class="info" title="求生e智-手機篇短片">
+      <a href="else2.html" class="info" title="求生e智-手機篇短片">
        <div class="mask">
         <table>
             <tr class="view80">
@@ -314,7 +314,7 @@ jQuery(document).ready(function(e) {
     <!--403-->
     <div class="item item-portfolio pd">
       <img src="images/else/else_marrow.jpg">
-      <a href="else3.php" class="info" title="求生e智-精華篇">
+      <a href="else3.html" class="info" title="求生e智-精華篇">
        <div class="mask">
         <table>
             <tr class="view80">
@@ -327,7 +327,7 @@ jQuery(document).ready(function(e) {
     <!--205-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_inc.jpg">
-      <a href="graphic5.php" class="info" title="巧克力幸福‧甜蜜的交匯">
+      <a href="graphic5.html" class="info" title="巧克力幸福‧甜蜜的交匯">
        <div class="mask">
         <table>
             <tr class="view70">
@@ -340,7 +340,7 @@ jQuery(document).ready(function(e) {
     <!--405-->
     <div class="item item-portfolio pd">
       <img src="images/else/else_seven.jpg">
-      <a href="else5.php" class="info" title="Seven">
+      <a href="else5.html" class="info" title="Seven">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -353,7 +353,7 @@ jQuery(document).ready(function(e) {
     <!--406-->
     <div class="item item-portfolio pd">
       <img src="images/else/else_leather.jpg">
-      <a href="else6.php" class="info" title="Leather">
+      <a href="else6.html" class="info" title="Leather">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -366,7 +366,7 @@ jQuery(document).ready(function(e) {
     <!--407-->
     <div class="item item-portfolio pd">
       <img src="images/else/else_flower.jpg">
-      <a href="else7.php" class="info" title="Flower">
+      <a href="else7.html" class="info" title="Flower">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -379,7 +379,7 @@ jQuery(document).ready(function(e) {
     <!--101-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_drguslogo.jpg">
-      <a href="image1.php" class="info" title="藥物濫用認輔志工">
+      <a href="image1.html" class="info" title="藥物濫用認輔志工">
        <div class="mask">
         <table>
             <tr class="view85">
@@ -392,7 +392,7 @@ jQuery(document).ready(function(e) {
     <!--102-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_12logo.jpg">
-      <a href="image2.php" class="info" title="12年國民基本教育">
+      <a href="image2.html" class="info" title="12年國民基本教育">
        <div class="mask">
         <table>
             <tr class="view75">
@@ -405,7 +405,7 @@ jQuery(document).ready(function(e) {
     <!--103-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_jd.jpg">
-      <a href="image3.php" class="info" title="鶼鰈情深">
+      <a href="image3.html" class="info" title="鶼鰈情深">
        <div class="mask">
         <table>
             <tr class="view70">
@@ -418,7 +418,7 @@ jQuery(document).ready(function(e) {
     <!--208-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_dark.jpg">
-      <a href="graphic8.php" class="info" title="Desire">
+      <a href="graphic8.html" class="info" title="Desire">
        <div class="mask">
         <table>
             <tr class="view70">
@@ -431,7 +431,7 @@ jQuery(document).ready(function(e) {
     <!--104-->
     <div class="item item-portfolio pd">
       <img src="images/image/img_was.jpg">
-      <a href="image4.php" class="info" title="靜觀奇變">
+      <a href="image4.html" class="info" title="靜觀奇變">
        <div class="mask">
         <table>
             <tr class="view80">
@@ -444,7 +444,7 @@ jQuery(document).ready(function(e) {
      <!--203-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_2013nyc.jpg">
-      <a href="graphic3.php" class="info" title="2013新年賀卡">
+      <a href="graphic3.html" class="info" title="2013新年賀卡">
        <div class="mask">
         <table>
             <tr class="view95">
@@ -457,7 +457,7 @@ jQuery(document).ready(function(e) {
     <!--204-->
     <div class="item item-portfolio pd">
       <img src="images/graphic/gra_2014nyc.jpg">
-      <a href="graphic4.php" class="info" title="2013新年賀卡">
+      <a href="graphic4.html" class="info" title="2013新年賀卡">
        <div class="mask">
         <table>
             <tr class="view95">
