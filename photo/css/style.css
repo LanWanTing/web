@@ -1,0 +1,41 @@
+/*共用設定*/
+*{ margin: 0; padding: 0;}
+body,html{height: 100%}
+button:focus{outline:none;}
+/*header*/
+header {background-color:#fff; min-height: 100%; width: 100%;}
+/*Nav導覽列*/
+.navbar{padding: 0 1rem; background-color: rgba(255, 255, 255, 0.8); border-bottom: #ddd solid 1px;}
+.navbar-toggler{margin: 0.7rem;}
+.navbar-collapse{justify-content: flex-end;}
+.navbar-expand-lg .navbar-nav .nav-link{ padding-left:.8rem; padding-right:.8rem;}
+.navbar-brand{ padding: 0;}
+.nav-link{ padding: 1.8rem .5rem 0.6rem; font-family: 'Archivo', sans-serif; font-weight: bold; font-size: 0.9rem;}
+.navbar-nav li>div{ 
+    background-color: transparent; width: 0%; height: 3px; box-sizing: border-box; margin:0 auto;
+    transition-property:background-color,width;
+	transition-duration:0.2s;
+}
+.navbar-nav li:nth-of-type(1) .nav-link:hover+div{ background-color: #b1b1b1; width:100%;}
+.navbar-nav li:nth-of-type(2) .nav-link:hover+div{ background-color: #ec7783; width:100%;}
+.navbar-nav li:nth-of-type(3) .nav-link:hover+div{ background-color: #f7bb64; width:100%;}
+.navbar-nav li:nth-of-type(4) .nav-link:hover+div{ background-color: #29bbb7; width:100%;}
+.navbar-nav li:nth-of-type(5) .nav-link:hover+div{ background-color: #b66da9; width:100%;}
+.navbar-nav li:nth-of-type(6) .nav-link:hover+div{ background-color: #5695ce; width:100%;}
+
+@media (max-width: 991px){
+    .navbar-light .navbar-toggler{ border: none; padding: .4rem .75rem .1rem; margin-right: 0rem;}
+    .navbar-nav{padding-bottom: 1rem}
+    .navbar-nav .nav-link {padding: .5rem 0 .5rem .5rem;}
+    .navbar-nav li>div{ display: none;}
+    .navbar-nav li .nav-link:active{ background-color:#ddd;}
+}
+/**/
+.wrapper {background-color: pink; min-height: 100%; width: 100%;}
+/*footer*/
+footer {background-color: skyblue; min-height: 100%; width: 100%;}
+
+
+/*測試用*/
+/**/
+
