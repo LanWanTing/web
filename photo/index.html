@@ -13,13 +13,23 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
         <script>
             $(function(){
-                $('.masonry').masonry({
-                    itemSelector: '.item'
-                });
-            });
+                /*$('.masonry').masonry({
+					  itemSelector: '.item'
+					});*/
+                var $container = $('.masonry');
+				//當圖片讀取完畢才執行
+				$container.imagesLoaded(function (){
+					// initialize
+					$container.masonry({
+						itemSelector: '.item'
+					})
+			 
+				});
+			});
         </script>
     </head>
     <body>
