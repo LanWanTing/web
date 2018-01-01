@@ -2,8 +2,10 @@
 *{ margin: 0; padding: 0;}
 body,html{height: 100%}
 button:focus{outline:none;}
+
 /*header*/
 /*header {background-color:#fff; min-height: 100%; width: 100%;}*/
+
 /*Nav導覽列*/
 .navbar{padding: 0 1rem; background-color: rgba(255, 255, 255, 0.9); border-bottom: #ddd solid 1px;}
 #navPoint {width: 100px; height: 4px; background-color: #b1b1b1; position: absolute; left:-100px; bottom:0px; opacity: 1;}
@@ -17,19 +19,6 @@ button:focus{outline:none;}
     transition-property:background-color,width;
 	transition-duration:0.2s;
 }
-.navbar-nav li:nth-of-type(1) .nav-link:hover+div{ background-color: #b1b1b1; width:100%;}
-.navbar-nav li:nth-of-type(2) .nav-link:hover+div{ background-color: #ec7783; width:100%;}
-.navbar-nav li:nth-of-type(3) .nav-link:hover+div{ background-color: #f7bb64; width:100%;}
-.navbar-nav li:nth-of-type(4) .nav-link:hover+div{ background-color: #29bbb7; width:100%;}
-.navbar-nav li:nth-of-type(5) .nav-link:hover+div{ background-color: #b66da9; width:100%;}
-.navbar-nav li:nth-of-type(6) .nav-link:hover+div{ background-color: #5695ce; width:100%;}
-
-.navbar-nav .open1{ background-color: #b1b1b1; width:100%;}
-.navbar-nav .open2{ background-color: #ec7783; width:100%;}
-.navbar-nav .open3{ background-color: #f7bb64; width:100%;}
-.navbar-nav .open4{ background-color: #29bbb7; width:100%;}
-.navbar-nav .open5{ background-color: #b66da9; width:100%;}
-.navbar-nav .open6{ background-color: #5695ce; width:100%;}
 @media (max-width: 991px){
     .navbar-light .navbar-toggler{ border: none; padding: .4rem .75rem .1rem; margin-right: 0rem;}
     .navbar-nav{padding-bottom: 1rem}
@@ -37,11 +26,11 @@ button:focus{outline:none;}
     .navbar-nav li>div{ display: none;}
     #navPoint{ display: none;}
 }
-/**/
+/*List列表頁*/
 .wrapper {background-color: #fff; min-height: 100%; width: 100%; padding-top: 5rem;}
 
 
-/*footer*/
+/*Footer頁尾*/
 footer { background-color: #444;}
 footer p{padding: 0.8rem 1rem; color: white; margin: 0; text-align: center; font-size: 14px;}
 @media (max-width: 576px){
