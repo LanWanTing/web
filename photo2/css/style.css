@@ -3,7 +3,7 @@
 body,html{height: 100%}
 button:focus{outline:none;}
 /*header*/
-header {background-color:#fff; min-height: 100%; width: 100%;}
+/*header {background-color:#fff; min-height: 100%; width: 100%;}*/
 /*Nav導覽列*/
 .navbar{padding: 0 1rem; background-color: rgba(255, 255, 255, 0.9); border-bottom: #ddd solid 1px;}
 #navPoint {width: 100px; height: 4px; background-color: #b1b1b1; position: absolute; left:-100px; bottom:0px; opacity: 1;}

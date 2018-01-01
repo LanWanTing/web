@@ -1,138 +1,56 @@
 <!DOCTYPE html>
 <html lan="zh-Hant-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <title>TinaLan Portfolio</title>
-    <link href="myfavicon.ico" rel="icon">
-    <link href="myfavicon.ico" rel="shortcut icon">
-    <link href="apple-touch-icon.png" rel="apple-touch-icon">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--google字型-->
-    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
-    
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!--bootstrap4-->
-    <script src="js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!--瀑布流-->
-    <script src="js/masonry.pkgd.min.js"></script>
-    <!--圖片讀取完畢-->
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!--速度函數表-->
-    <script src="js/jquery.easing.1.3.js"></script>
-    
-    <script>
-        $(function() {
-            var pageNo = $('body').attr('data-pageno'); //偵測目前頁面是第幾頁
-            var tagetLeft = $('.navbar-nav>li').eq(pageNo).offset().left; //console.log(tagetLeft); //偵測所在頁面對應的按鈕與視窗左邊的距離
-            var tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth(); //console.log(tagetWidth); //偵測所在頁面對應的按鈕的寬度
-            //網頁已載入#navPoint(做個動畫animate)自左飛入
-            $('#navPoint').animate({left: tagetLeft,width: tagetWidth}, 1000, 'easeInOutCubic');
-            
-            //當滑鼠HoverButtom要控制navPoint去移動與變化
-            $('.navbar-nav>li').hover(
-                //#navPoint要移動到滑鼠指定的按鈕上的動畫呈現
-                function(){
-                    var goalLeft = $(this).offset().left;
-                    var goalWidth = $(this).innerWidth();
-                    $('#navPoint').stop().animate({left: goalLeft,width: goalWidth}, 200, 'easeOutQuint');
-                }
-                //滑鼠離開按鈕時#navPoint要回去所在按鈕的動畫呈現
-                ,function(){
-                    $('#navPoint').stop().animate({left: tagetLeft,width: tagetWidth}, 200, 'easeOutQuint');
-                }
-            );
-            //當視窗調整大小時，#navPoint要跟著調整位置
-            $(window).resize(function(){
-                tagetLeft = $('.navbar-nav>li').eq(pageNo).offset().left;
-                tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth();
-                $('#navPoint').stop().animate({left: tagetLeft,width: tagetWidth}, 200, 'easeOutQuint');
-            })
-        });
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <title>TinaLan Portfolio</title>
+        <link href="myfavicon.ico" rel="icon">
+        <link href="myfavicon.ico" rel="shortcut icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--google字型-->
+        <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
 
-    </script>
-    <script>
-        /*瀑布流效果*/
-        $(function() {
-            /*$('.masonry').masonry({
-					  itemSelector: '.item'
-					});*/
-            var $container = $('.masonry');
-            //當圖片讀取完畢才執行
-            $container.imagesLoaded(function() {
-                // initialize
-                $container.masonry({
-                    itemSelector: '.item'
-                })
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!--bootstrap4-->
+        <script src="js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--瀑布流-->
+        <script src="js/masonry.pkgd.min.js"></script>
+        <!--圖片讀取完畢-->
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <!--速度函數表-->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/list.js"></script>
+        
+    </head>
 
-            });
-        });
-    </script>
-</head>
-
-<body data-pageno="0">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <!--logo-->
-        <a class="navbar-brand" href="#" title="TinaLan Portfolio">
-                <img src="images/logo.png" alt="logo" style="width:194px;">
-            </a>
-        <!--手機板按鈕-->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <!--選單-->
-        <div class="collapse navbar-collapse" id="navb">
-            <div id="navPoint"></div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ALL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div></div>IMAGE DESIGN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div></div>GRAPHIC DESIGN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div></div>WEB DESIGN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div></div>ELSE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div></div>DESIGNER</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="row masonry">
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
-                <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+    <body data-pageno="0">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <!--載入nav.html-->
+        </nav>
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row masonry">
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_bumper.jpg" class="img-fluid"></div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 item"><img src="images/image/img_peony.jpg" class="img-fluid" /></div>
+                </div>
             </div>
         </div>
-    </div>
-    <footer class="d-flex justify-content-center w-100 fixed-bottom">
-        <p>COPYRIGHT © TINA LAN PORTFOLIO.&nbsp;&nbsp;&nbsp;ALL RIGHTS RESERVED&nbsp;&nbsp;&nbsp;DESIGN BY TINA LAN</p>
-    </footer>
-</body>
+        <footer class="d-flex justify-content-center w-100">
+            <!--載入footer.html--> 
+        </footer>
+    </body>
 
 </html>
