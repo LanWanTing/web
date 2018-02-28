@@ -65,7 +65,6 @@ button:focus{outline:none;}
     .container-fluid{padding-right: 0rem; padding-left: 0rem; padding-bottom: 5rem;}
     .container-fluid .txtArea{padding: 2rem 2rem 0 2rem;}
     .container-fluid h2{ font-size: 1.6rem}
-    .carousel-control-next, .carousel-control-prev{ width: 6%;}
 }
 
 
