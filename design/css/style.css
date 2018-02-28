@@ -2,6 +2,7 @@
 *{ margin: 0; padding: 0;}
 body,html{height: 100%; background-color: #fff;}
 button:focus{outline:none;}
+a,a:hover{text-decoration: none;}
 
 /*header*/
 /*header {background-color:#fff; min-height: 100%; width: 100%;}*/
@@ -20,7 +21,7 @@ button:focus{outline:none;}
 	transition-duration:0.2s;
 }
 @media (max-width: 991px){
-    .navbar-light .navbar-toggler{ border: none; padding: .4rem .75rem .1rem; margin-right: 0rem;}
+    .navbar-light .navbar-toggler{ border: none; padding: .4rem .75rem .1rem; margin-right: 0rem; }
     .navbar-nav{padding-bottom: 1rem}
     .navbar-expand-lg .navbar-nav .nav-link {padding: .5rem 0 .5rem .5rem;}
     .navbar-nav li>div{ display: none;}
@@ -31,18 +32,21 @@ button:focus{outline:none;}
 .wrapper { min-height: 100%; width: 100%; padding-top: 75px; background: #fff;}
 .container-fluid{overflow: hidden;}
 .col-xl-2, .col-md-3, .col-sm-4, .col-6{ padding-right: 10px; padding-left: 10px; padding-bottom: 20px;  }
-.masonry .item a{ padding: 0px; border:1px solid #eee; display: block; position: relative;}
+.masonry .item a{ padding: 0px; border:1px solid #eee; display: block; position: relative; color: #333}
 .masonry .item .cover{ display:flex; justify-content:center; align-items:center; text-align:center; background-color:rgba(0, 0, 0, 0.8); width: 100%; height: 100%; position: absolute; top:0; left:0; color: #fff; opacity:0; transition: opacity 0.5s;}
 .masonry .item a:hover .cover{ opacity: 1;}
-.masonry .item .cover p{ margin: 0;}
-.masonry .item .cover span{ font-size: 14px;}
+.masonry .item .cover p{ margin: 0; display: inline-block; border:rgba(255,255,255,0.2) solid 1px; padding: 0 10px; }
+.masonry .item .contentBox{ margin: 8px; font-family: 'Archivo','微軟正黑體' sans-serif; font-size: 0.9rem; line-height: 1.5rem;}
+
+/*Work作品介紹頁*/
+.breadcrumb{ background-color: #fff;}
 
 /*bxSilder*/
 .bx-wrapper{ border: none; box-shadow:none; margin-bottom: 0;}
 
 
 /*Footer頁尾*/
-footer { background-color: #444;}
+footer { background-color: #e4007f;}
 footer p{padding: 0.8rem 1rem; color: white; margin: 0; text-align: center; font-size: 14px;}
 @media (max-width: 576px){
     footer p{padding: 0.8rem 1.5rem; color: white; margin: 0; text-align: center; font-size: 12px;}

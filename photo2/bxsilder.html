@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lan="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <title>TinaLan Portfolio</title>
+        <link href="myfavicon.ico" rel="icon">
+        <link href="myfavicon.ico" rel="shortcut icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <!--通用檔案-->
+        <!--google字型-->
+        <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!--bootstrap4-->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">    
+        <script src="js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--瀑布流-->
+        <script src="js/masonry.pkgd.min.js"></script>
+        <!--圖片讀取完畢-->
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <!--速度函數表-->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!--列表頁共用js-->
+        <script src="js/list.js"></script>
+        <!--bxslider圖片切換效果-->
+        <!--<link rel="stylesheet" href="js/bxslider4/jquery.bxslider.min.css">-->
+        <link rel="stylesheet" href="js/bxslider4/jquery.bxslider.css">
+        <script src="js/bxslider4/jquery.bxslider.min.js"></script>
+        <script src="js/bxslider4/jquery.bxslider.js"></script>
+        <!--Stylecss-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script>
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    mode: 'horizontal' //圖片切換模式horizontal水平,vertical垂直,fade淡入淡出
+                    ,captions: false //圖片標題true打開,fales關閉
+                    ,auto:true //自動輪播true打開,fales關閉
+                    ,pause:4000 //自動切換的時間
+
+                });
+            });
+        </script>
+    </head>
+
+    <body data-pageno="0">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <!--載入nav.html-->
+        </nav>
+        <div class="wrapper">
+            <div class="slider">
+                <div><img src="images/bxsilder/slider_bg1.jpg" title="test" alt="test"></div>
+                <div><img src="images/bxsilder/slider_bg2.jpg" title="test" alt="test"></div>
+            </div>
+        </div>
+        <footer class="d-flex justify-content-center w-100">
+            <!--載入footer.html-->
+        </footer>
+    </body>
+
+</html>
