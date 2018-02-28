@@ -59,11 +59,12 @@ button:focus{outline:none;}
 .carousel-control-prev-icon {
     background-image: url(../images/color_prev.png);
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{ width: 30px; height: 50px;}
+.carousel-control-next-icon, .carousel-control-prev-icon{ width: 24%; height: 6%;}
 @media (max-width: 991px){
     .breadcrumb{ padding: .75rem 1.5rem;}
     .container-fluid{padding-right: 0rem; padding-left: 0rem; padding-bottom: 5rem;}
     .container-fluid .txtArea{padding: 2rem 2rem 0 2rem;}
+    .container-fluid h2{ font-size: 1.6rem}
 }
 
 
