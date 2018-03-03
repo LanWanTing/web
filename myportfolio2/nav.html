@@ -28,11 +28,10 @@
                     tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth();
                     $('#navPoint').stop().animate({left: tagetLeft,width: tagetWidth}, 200, 'easeOutQuint');
                 });
-                 //如果是手機版時() ==================================================================
+                //如果是手機版時() ==================================================================
                 if( $('.navbar-toggler').is(':visible')){
                     //當選單按鈕被click
-                    $('#navb .navbar-nav li a').click(function(){ 
-                        //#navb .navbar-nav a，但不是有.dropdown-toggle這個class的a之外被點則處發關閉按鈕
+                    $('#navb .navbar-nav a:not(.dropdown-toggle)').click(function(){ 
                         //自動觸發.navbar-toggle按鈕被按=>選單關閉
                         $('.navbar-toggler').trigger('click');
                     });
