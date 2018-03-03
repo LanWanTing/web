@@ -43,6 +43,7 @@ button:focus{outline:none;}
     .masonry .item .cover p{color: #484848;  font-family: font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif; font-size: 1rem; font-weight: 400;}
     .masonry .item .cover span{ display: none;}
     .masonry .item{ padding-bottom: 60px;}
+    .workWrapper{padding-bottom: 0px;}
 
 }
 @media (max-width: 767px){
