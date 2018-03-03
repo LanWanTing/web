@@ -30,7 +30,7 @@ button:focus{outline:none;}
     .navbar{background-color: #fff;/* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); border-bottom:none;*/}
 }
 /*List列表頁*/
-.wrapper, .workWrapper { min-height: 100%; width: 100%; padding-top: 75px; padding-bottom: 50px; background: #fff;}
+.wrapper, .workWrapper { min-height: 100%; width: 100%; padding-top: 90px; padding-bottom: 50px; background: #fff;}
 .container-fluid{overflow: hidden; padding-right: 30px; padding-left: 30px;}
 .col-xl-3, .col-md-4, .col-sm-6, .col-12{ padding-right: 10px; padding-left: 10px; padding-bottom: 20px;  }
 .masonry .item a{ padding: 0px; border:1px solid #eee; display: block; position: relative;}
@@ -61,7 +61,7 @@ button:focus{outline:none;}
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{ width: 30px; height: 50px;}
 @media (max-width: 991px){
-    .breadcrumb{ padding: .75rem 1.5rem;}
+    .breadcrumb{ padding: 0 1rem .75rem 1rem; margin-bottom: 0rem;} 
     .workWrapper .container-fluid{padding-right: 0rem; padding-left: 0rem; padding-bottom: 5rem;}
     .workWrapper .container-fluid .txtArea{padding: 2rem 2rem 0 2rem;}
     .workWrapper .container-fluid h2{ font-size: 1.6rem}
