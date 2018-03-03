@@ -24,6 +24,19 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <!--列表頁共用js-->
     <script src="js/list.js"></script>
+    <script>
+            $(function() {
+                //如果是手機版時() ==================================================================
+                if( $('.navbar-toggler').is(':visible') ){
+                    //當選單按鈕被click
+                    $('#navb .navbar-nav a:not(.dropdown-toggle)').click(function(){ 
+                        //#navb .navbar-nav a，但不是有.dropdown-toggle這個class的a之外被點則處發關閉按鈕
+                        //自動觸發.navbar-toggle按鈕被按=>選單關閉
+                        $('.navbar-toggler').trigger('click');
+                    });
+                }
+            });
+        </script>
 </head>
 
 <body data-pageno="0">
