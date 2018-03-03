@@ -30,13 +30,13 @@ button:focus{outline:none;}
     .navbar{background-color: #fff; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); border-bottom:none;}
 }
 /*List列表頁*/
-.wrapper { min-height: 100%; width: 100%; padding-top: 75px; background: #fff;}
-.container-fluid{overflow: hidden;}
-.col-xl-2, .col-md-3, .col-sm-4, .col-6{ padding-right: 10px; padding-left: 10px; padding-bottom: 20px;  }
+.wrapper, .workWrapper { min-height: 100%; width: 100%; padding-top: 75px; padding-bottom: 50px; background: #fff;}
+.container-fluid{overflow: hidden; padding-right: 30px; padding-left: 30px;}
+.col-xl-3, .col-md-4, .col-sm-6, .col-12{ padding-right: 10px; padding-left: 10px; padding-bottom: 20px;  }
 .masonry .item a{ padding: 0px; border:1px solid #eee; display: block; position: relative;}
 .masonry .item .cover{ display:flex; justify-content:center; align-items:center; text-align:center; background-color:rgba(0, 0, 0, 0.8); width: 100%; height: 100%; position: absolute; top:0; left:0; color: #fff; opacity:0; transition: opacity 0.5s;}
 .masonry .item a:hover .cover{ opacity: 1;}
-.masonry .item .cover p{ margin: 0;}
+.masonry .item .cover p{ margin: 0; color: #fff;}
 .masonry .item .cover span{ font-size: 14px;}
 
 /*作品介紹頁*/
@@ -45,12 +45,12 @@ button:focus{outline:none;}
 .breadcrumb-item a{color:#555;}
 .active{ font-family: 'Noto Sans TC', sans-serif;}
 /*作品內容*/
-.container-fluid{padding-right: 1.5rem; padding-left: 4rem; font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif;}
-.container-fluid h2{font-family:'Noto Sans TC', sans-serif;}
-.container-fluid .txtArea{padding: 0 4rem 0 1rem;}
-.container-fluid h6{ color: #999; margin-bottom: 1rem;}
-.container-fluid p{font-weight: normal; font-size: 1rem; color:#333333; line-height: 1.6rem; margin-bottom: 1.8rem;}
-.txtArea .makeDate{margin: 0; color: #999; font-size: 1rem; font-weight: normal;}
+.workWrapper .container-fluid{padding-right: 1.5rem; padding-left: 4rem; font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif;}
+.workWrapper .container-fluid h2{font-family:'Noto Sans TC', sans-serif;}
+.workWrapper .container-fluid .txtArea{padding: 0 4rem 0 1rem;}
+.workWrapper .container-fluid h6{ color: #999; margin-bottom: 1rem;}
+.workWrapper .container-fluid p{font-weight: normal; font-size: 1rem; color:#333333; line-height: 1.6rem; margin-bottom: 1.8rem; text-align: justify;}
+.workWrapper .txtArea .makeDate{margin: 0; color: #999; font-size: 1rem; font-weight: normal;}
 .carousel-control-next, .carousel-control-prev{ width: 10%; opacity: 0.5;}
 .carousel-indicators{bottom:5px;}
 .carousel-control-next-icon {
@@ -62,9 +62,9 @@ button:focus{outline:none;}
 .carousel-control-next-icon, .carousel-control-prev-icon{ width: 30px; height: 50px;}
 @media (max-width: 991px){
     .breadcrumb{ padding: .75rem 1.5rem;}
-    .container-fluid{padding-right: 0rem; padding-left: 0rem; padding-bottom: 5rem;}
-    .container-fluid .txtArea{padding: 2rem 2rem 0 2rem;}
-    .container-fluid h2{ font-size: 1.6rem}
+    .workWrapper .container-fluid{padding-right: 0rem; padding-left: 0rem; padding-bottom: 5rem;}
+    .workWrapper .container-fluid .txtArea{padding: 2rem 2rem 0 2rem;}
+    .workWrapper .container-fluid h2{ font-size: 1.6rem}
 }
 
 
