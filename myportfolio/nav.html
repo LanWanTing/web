@@ -27,7 +27,7 @@
                     tagetLeft = $('.navbar-nav>li').eq(pageNo).offset().left;
                     tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth();
                     $('#navPoint').stop().animate({left: tagetLeft,width: tagetWidth}, 200, 'easeOutQuint');
-                })
+                });
                 //如果是手機版時() ==================================================================
                 if( $('.navbar-toggler').is(':visible') ){
                     //當選單按鈕被click
@@ -35,6 +35,7 @@
                         //自動觸發.navbar-toggle按鈕被按=>選單關閉
                         $('.navbar-toggler').trigger('click');
                     });
+                    }
                 });
         </script>
     </head>

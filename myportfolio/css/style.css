@@ -40,7 +40,7 @@ button:focus{outline:none;}
 .masonry .item .cover span{ font-size: 14px;}
 @media (max-width: 991px){
     .masonry .item .cover{ justify-content:left; background-color:transparent; height: 36px; top:inherit; bottom:-36px; opacity:1; transition: none;}
-    .masonry .item .cover p{color: #484848;  font-family: font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif; font-size: 1rem; font-weight: 400;}
+    .masonry .item .cover p{color: #484848;  font-family: font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif; font-size: .8rem; font-weight: 400;}
     .masonry .item .cover span{ display: none;}
     .masonry .item{ padding-bottom: 60px;}
     .workWrapper{padding-bottom: 0px;}
