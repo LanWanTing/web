@@ -3,7 +3,7 @@
     <head>
         <script>
             $(function() {
-                /*var pageNo = $('body').attr('data-pageno'); //偵測目前頁面是第幾頁
+                var pageNo = $('body').attr('data-pageno'); //偵測目前頁面是第幾頁
                 var tagetLeft = $('.navbar-nav>li').eq(pageNo).offset().left; //console.log(tagetLeft); //偵測所在頁面對應的按鈕與視窗左邊的距離
                 var tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth(); //console.log(tagetWidth); //偵測所在頁面對應的按鈕的寬度
                 //網頁已載入#navPoint(做個動畫animate)自左飛入
@@ -27,15 +27,7 @@
                     tagetLeft = $('.navbar-nav>li').eq(pageNo).offset().left;
                     tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth();
                     $('#navPoint').stop().animate({left: tagetLeft,width: tagetWidth}, 200, 'easeOutQuint');
-                });*/
-                //如果是手機版時() ==================================================================
-                if( $('navbar-toggler').is(':visible') ){
-                    //當選單按鈕被click
-                    $('#navb .navbar-nav a:not(.dropdown-toggle)').click(function(){
-                        //自動觸發.navbar-toggle按鈕被按=>選單關閉
-                        $('.navbar-toggler').trigger('click');
-                    });
-                }
+                });
             });
         </script>
     </head>
