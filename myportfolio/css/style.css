@@ -24,7 +24,7 @@ button:focus{outline:none;}
     .navbar-light .navbar-toggler{ border: none; padding: .4rem .75rem .1rem; margin-right: 0rem;}
     .navbar-brand{ margin-left:0rem;}
     .navbar-nav{padding-bottom: 1rem}
-    .navbar-expand-lg .navbar-nav .nav-link {padding: .5rem 0 .5rem .5rem;}
+    .navbar-expand-lg .navbar-nav .nav-link {padding: .5rem 0 .5rem .5rem; cursor:pointer;}
     .navbar-nav li>div{ display: none;}
     #navPoint{ display: none;}
     .navbar{background-color: #fff;}
