@@ -41,6 +41,10 @@
                         width: tagetWidth
                     }, 200, 'easeOutQuint');
                 });
+                //如果是手機版時() ==================================================================
+                if( $('.navbar-toggler').is(':visible') ){
+                    $('#navPoint').removeAttr('style').hide();
+                }
             });
         </script>
     </head>
