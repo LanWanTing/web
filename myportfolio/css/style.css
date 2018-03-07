@@ -26,7 +26,7 @@ button:focus{outline:none;}
     .navbar-nav{padding-bottom: 1rem}
     .navbar-expand-lg .navbar-nav .nav-link {padding: .5rem 0 .5rem .5rem; cursor:pointer;}
     .navbar-nav li>div{ display: none;}
-    #navPoint{ display: none;}
+    /*#navPoint{ display: none;}*/
     .navbar{background-color: #fff;}
 }
 /*List列表頁*/
