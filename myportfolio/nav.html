@@ -5,7 +5,7 @@
         $(function() {
             var openBtn = $('.navbar-toggler').is(':visible')
             var viewW = $(window).width();
-            if (viewW >=991) {
+            if (viewW >991) {
                 var pageNo = $('body').attr('data-pageno'); //偵測目前頁面是第幾頁
                 var tagetLeft = $('.navbar-nav>li').eq(pageNo).offset().left; //console.log(tagetLeft); //偵測所在頁面對應的按鈕與視窗左邊的距離
                 var tagetWidth = $('.navbar-nav>li').eq(pageNo).innerWidth(); //console.log(tagetWidth); //偵測所在頁面對應的按鈕的寬度
