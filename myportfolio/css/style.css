@@ -7,7 +7,7 @@ button:focus{outline:none;}
 
 /*Nav導覽列*/
 .navbar{padding: 0 1rem; background-color: rgba(255, 255, 255, 0.9); border-bottom: #ddd solid 1px;}
-#navPoint {width: 100px; height: 4px; background-color: #b1b1b1; position: absolute; left:-100px; bottom:0px; opacity: 1; display: block;}
+#navPoint {width: 100px; height: 3px; background-color: #b1b1b1; position: absolute; left:-100px; bottom:0px; opacity: 1; display: block;}
 .navbar-brand{ margin-left:2rem;}
 .navbar-nav{ margin-right: 1rem;}
 .navbar-toggler{margin: 0.7rem;}
@@ -36,17 +36,20 @@ button:focus{outline:none;}
 .masonry .item a{ padding: 0px; /*border:1px solid #eee;*/ display: block; position: relative; color: #484848;}
 .masonry .item .cover{ display:flex; justify-content:center; align-items:center; text-align:center; background-color:rgba(0, 0, 0, 0.8); width: 100%; height: 100%; position: absolute; top:0; left:0; color: #fff; opacity:0; transition: opacity 0.5s;}
 .masonry .item a:hover .cover{ opacity: 1;}
-.masonry .item .cover p{ margin: 0; color: #fff;}
+.masonry .item .cover p{ margin: 0; color: #fff; font-size: 1.1rem;}
 .masonry .item .cover span{ font-size: 14px;}
 @media (max-width: 991px){
     .masonry .item .cover{ justify-content:left; background-color:transparent; height: 36px; top:inherit; bottom:-36px; opacity:1; transition: none;}
-    .masonry .item .cover p{color: #484848;  font-family: font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif; font-size: .8rem; font-weight: 400;}
+    .masonry .item .cover p{color: #484848;  font-family: font-family:'Arial','Microsoft JhengHei', 'Noto Sans TC', sans-serif; font-size: 1rem; font-weight: 400;}
     .masonry .item .cover span{ display: none;}
     .masonry .item{ padding-bottom: 60px;}
     .workWrapper{padding-bottom: 0px;}
 }
 @media (max-width: 767px){
     .container-fluid{padding-right: 20px; padding-left: 20px;}
+}
+@media (max-width: 576px){
+    .masonry .item .cover p{font-size: .8rem;}
 }
 /*作品介紹頁*/
 /*麵包屑*/
@@ -70,6 +73,10 @@ button:focus{outline:none;}
     .workWrapper .container-fluid{padding-right: 0rem; padding-left: 0rem; padding-bottom: 5rem;}
     .workWrapper .container-fluid .txtArea{padding: .5rem 2rem 0 2rem;}
     .workWrapper .container-fluid h2{ font-size: 1.6rem}
+}
+@media (max-width: 576px){
+    .carousel-control-next, .carousel-control-prev{width: 15%;}
+    .carousel-control-next-icon, .carousel-control-prev-icon{background-size: 80% 80%;}
 }
 
 
