@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lan="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>momoTV APP</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <!--bootstrap4 css-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--animate微動畫-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--共用css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--google字型-->
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+    <!--jquery-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--bootstrap4 js-->
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--瀑布流-->
+    <script src="js/masonry.pkgd.min.js"></script>
+    <!--圖片讀取完畢-->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!--速度函數表-->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!--捲動效果-->
+    <script src="js/jquery.wow-1.0.3.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'fadeInUp', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true, // 手機上是否要套用動畫 (預設是true)
+        });
+        wow.init();
+    </script>
+
+    <!--共用js-->
+    <script src="js/main.js"></script>
+</head>
+
+<body data-pageno="0">
+    <!--主選單開始-->
+    <nav id="mainHeader" class="navbar navbar-expand-md navbar-light fixed-top">
+        <!--logo-->
+        <a class="navbar-brand" href="index.html" title="TinaLan Portfolio">
+                <img src="images/logo.png" alt="logo" style="width:220px;">
+            </a>
+        <!--手機板按鈕-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--選單-->
+        <div class="collapse navbar-collapse" id="navb">
+            <div id="navPoint"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">ALL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2015.hrml">
+                        <div></div>2015</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2016.html">
+                        <div></div>2016</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2017.html">
+                        <div></div>2017</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2018.html">
+                        <div></div>2018</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="else.html">
+                        <div></div>ELSE</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--主選單結束-->
+    <!--列表開始-->
+    <div class="wrapper">
+        <!--分類選單-->
+        <div class="secMenu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu1">
+                        <sapn class="lessTxt">活動</sapn>
+                        <sapn class="moreTxt">APP活動檔期</sapn>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu2">
+                        <sapn class="lessTxt">商品</sapn>
+                        <sapn class="moreTxt">一般商品專區</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu3">
+                        <sapn class="lessTxt">週末</sapn>
+                        <sapn class="moreTxt">週末折扣專區</sapn>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu4">
+                        <sapn class="lessTxt">折價券</sapn>
+                        <sapn class="moreTxt">折價券專區</sapn>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu5">
+                        <sapn class="lessTxt">會員</sapn>
+                        <sapn class="moreTxt">會員經營</sapn>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu5">
+                        <sapn class="lessTxt">其他</sapn>
+                        <sapn class="moreTxt">其他</sapn>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <!--分類選單結束-->
+            <!--APP活動檔期列表開始-->
+            <div id="menu1" class="listArea" data-pageno="0">
+                <h3>APP活動檔期</h3>
+                <div class="row masonry">
+                    <!--2018/001春省來了-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo01.jpg" class="img-fluid" alt="春省來了" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.16-2018.03.18</div>
+                                <h4 class="title">春省來了</h4>
+                                <div class="keyword">滿$1200現折$388元 現折 週末折扣</div>
+                                <div class="keyword">花朵 葉子 春天 春季 清新 手繪風 綠色 粉紅色 條紋 三月</div>
+                                <div class="people"><span>企劃/莉瑋</span><span>設計/宛亭</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="C:/Users/WTLAN/Documents/GitHub/web/momotv" target="_blank" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="https://www.momoshop.com.tw/" target="_blank" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/002玩美旅行應援團-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo02.jpg" class="img-fluid" alt="玩美旅行應援團" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.01-2018.03.20</div>
+                                <h4 class="title">玩美旅行應援團</h4>
+                                <div class="keyword">TV滿額贈品 APP加碼送 TV破口 ALPHARD馬鞍包 TESCOM大風量負離子吹風機 瑞士質感髮絲紋PC行李箱七件組</div>
+                                <div class="keyword">旅行 旅遊 花朵 葉子 春天 手繪風 熱氣球 綠色 粉紅色 郵戳 薰衣草 草</div>
+                                <div class="people"><span>企劃/宜臻</span><span>設計/台偉</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/003春上市-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo03.jpg" class="img-fluid" alt="春上市" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.05-2018.03.31</div>
+                                <h4 class="title">春上市</h4>
+                                <div class="keyword">TV破口 新品時段經營 專區消費滿一件登記送贈品三選一 雙層化妝包 方型化妝包 亮片化妝包</div>
+                                <div class="keyword">花朵 葉子 春天 手繪風 藍天 清新 小鳥 蝴蝶</div>
+                                <div class="people"><span>企劃/宜臻</span><span>設計/宛亭</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/004APP雙響讚-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo04.jpg" class="img-fluid" alt="APP雙響讚" /></div>
+                            <div class="content">
+                                <div class="date">2018.02.01-2018.03.31</div>
+                                <h4 class="title">APP雙響讚</h4>
+                                <div class="keyword">TV破口 APP活動 台灣大哥大 會員經營 手機 異業合作</div>
+                                <div class="keyword">搖滾 熱鬧</div>
+                                <div class="people"><span>企劃/庭嘉</span><span>設計/宛亭</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/005LANEIGRXIOPE-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo05.jpg" class="img-fluid" alt="LANEIGR X IOPE" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.12-2018.03.18</div>
+                                <h4 class="title">LANEIGR X IOPE 海外週</h4>
+                                <div class="keyword">TV破口 APP專區 LANEIGR IOPE 海外週 新品 韓國 </div>
+                                <div class="keyword">LANEIGR IOPE 李聖經 化妝品 韓國 美妝 代言人 玫瑰金</div>
+                                <div class="people"><span>企劃/JAZ</span><span>設計/鴻彬</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/0063月首購指定商品85折-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo06.jpg" class="img-fluid" alt="TV APP 指定商品85折" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.01-2018.03.31</div>
+                                <h4 class="title">3月首購指定商品85折</h4>
+                                <div class="keyword">APP專區 首購專區 指定商品 85折扣</div>
+                                <div class="keyword">光圈 三角形 招牌</div>
+                                <div class="people"><span>企劃/</span><span>設計/台偉</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                </div>
+            </div>
+            <!--APP活動檔期列表結束-->
+
+            <!--一般商品專區開始-->
+            <div id="menu2" class="listArea">
+                <h3>一般商品專區</h3>
+                <div class="row masonry">
+                    <!--2018/001春省來了-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo01.jpg" class="img-fluid" alt="春省來了" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.16-2018.03.18</div>
+                                <h4 class="title">春省來了</h4>
+                                <div class="keyword">滿$1200現折$388元 現折 週末折扣</div>
+                                <div class="keyword">花朵 葉子 春天 春季 清新 手繪風 綠色 粉紅色 條紋 三月</div>
+                                <div class="people"><span>企劃/莉瑋</span><span>設計/宛亭</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/002玩美旅行應援團-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo02.jpg" class="img-fluid" alt="春省來了" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.01-2018.03.20</div>
+                                <h4 class="title">玩美旅行應援團</h4>
+                                <div class="keyword">TV滿額贈品 APP加碼送 ALPHARD馬鞍包 TESCOM大風量負離子吹風機 瑞士質感髮絲紋PC行李箱七件組</div>
+                                <div class="keyword">旅行 旅遊 花朵 葉子 春天 手繪風 熱氣球 綠色 粉紅色 郵戳 薰衣草 草</div>
+                                <div class="people"><span>企劃/宜臻</span><span>設計/台偉</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                </div>
+            </div>
+            <!--一般商品專區列表結束-->
+
+            <!--週末折扣專區開始-->
+            <div id="menu3" class="listArea">
+                <h3>週末折扣專區</h3>
+                <div class="row masonry">
+                    <!--2018/001春省來了-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo01.jpg" class="img-fluid" alt="春省來了" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.16-2018.03.18</div>
+                                <h4 class="title">春省來了</h4>
+                                <div class="keyword">滿$1200現折$388元 現折 週末折扣</div>
+                                <div class="keyword">花朵 葉子 春天 春季 清新 手繪風 綠色 粉紅色 條紋 三月</div>
+                                <div class="people"><span>企劃/莉瑋</span><span>設計/宛亭</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <!--2018/002玩美旅行應援團-->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 item wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <div class="listBox">
+                            <div><img src="images/2018/mo02.jpg" class="img-fluid" alt="春省來了" /></div>
+                            <div class="content">
+                                <div class="date">2018.03.01-2018.03.20</div>
+                                <h4 class="title">玩美旅行應援團</h4>
+                                <div class="keyword">TV滿額贈品 APP加碼送 ALPHARD馬鞍包 TESCOM大風量負離子吹風機 瑞士質感髮絲紋PC行李箱七件組</div>
+                                <div class="keyword">旅行 旅遊 花朵 葉子 春天 手繪風 熱氣球 綠色 粉紅色 郵戳 薰衣草 草</div>
+                                <div class="people"><span>企劃/宜臻</span><span>設計/台偉</span></div>
+                            </div>
+                            <div class="cover">
+                                <a href="#" class="listLink folder" title="資料夾路徑"></a>
+                                <a href="#" class="listLink link" title="前往頁面"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-->
+                </div>
+            </div>
+            <!--週末折扣專區列表結束-->
+        </div>
+    </div>
+    <!--列表結束-->
+    <div class="topButton"></div>
+    <!--頁尾開始-->
+    <footer class="d-flex justify-content-center w-100">
+        <p>COPYRIGHT © momoTV APP.&nbsp;&nbsp;&nbsp;ALL RIGHTS RESERVED</p>
+    </footer>
+    <!--頁尾結束-->
+</body>
+
+</html>

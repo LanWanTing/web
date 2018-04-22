@@ -1,0 +1,97 @@
+/*共用設定*/
+*{ margin: 0; padding: 0;}
+body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-serif','微軟正黑體','Microsoft JhengHei';}
+button:focus{outline:none;}
+/*header*/
+/*header {background-color:#fff; min-height: 100%; width: 100%;}*/
+
+/*Nav導覽列*/
+.navbar{padding: 0 1rem; background-color: rgba(255, 255, 255, 0.8); border-bottom: #ddd solid 1px;}
+#navPoint {width: 100px; height: 3px; background-color: #b1b1b1; position: absolute; left:-100px; bottom:0px; opacity: 1; display: block;}
+.navbar-brand{ margin-left:2rem;}
+.navbar-nav{ margin-right: 1rem;}
+.navbar-toggler{margin: 0.7rem;}
+.navbar-collapse{justify-content: flex-end;}
+.navbar-expand-md .navbar-nav .nav-link{ padding-left:1rem; padding-right:1rem;}
+.navbar-brand{ padding: 0;}
+.nav-link{ padding: 1.8rem .5rem 0.6rem; font-family: 'Archivo', sans-serif; font-weight: bold; font-size: 1rem;}
+.navbar-nav li>div{ 
+    background-color: transparent; width: 0%; height: 3px; box-sizing: border-box; margin:0 auto;
+    transition-property:background-color,width;
+    transition-duration:0.2s;
+}
+@media (max-width: 767px){
+    .navbar-light .navbar-toggler{ border: none; padding: .4rem .75rem .1rem; margin-right: 0rem;}
+    .navbar-brand{ margin-left:0rem;}
+    .navbar-nav{padding-bottom: 1rem}
+    .navbar-expand-lg .navbar-nav .nav-link {padding: .5rem 0 .5rem .5rem; cursor:pointer;}
+    .navbar-nav li>div{ display: none;}
+    .closePoint{ left:0; width: 0; display: none;}
+    .navbar{background-color: #fff;}
+}
+/*List列表頁*/
+.wrapper, .workWrapper { min-height: 100%; width: 100%; padding-top: 80px; padding-bottom: 70px; background: #fff;}
+.container-fluid{overflow: hidden; padding-right: 30px; padding-left: 30px;}
+.col-xl-3, .col-md-4, .col-sm-6, .col-12{ padding-right: 10px; padding-left: 10px; padding-bottom: 20px;}
+.masonry .item {opacity: 0;}
+.masonry .item .listBox{ padding: 0px; border:1px solid #ddd; position: relative;}
+/*內容*/
+.masonry .item .content{ display:flex; justify-content:left; align-items:left; flex-direction: column; text-align:left; background-color:rgba(0, 0, 0, 0); width: 100%; position:relative; color: #fff; opacity:1; transition: opacity 0.5s; padding:1.2rem 1.4rem}
+.masonry .item .content p{margin: 0; line-height: 1.8rem;}
+.masonry .item .content h4{color: #000; font-size: 1.4rem; }
+.masonry .item .content .date{color: #999; font-size: 0.9rem; padding: 0 0 5px 0;}
+.masonry .item .content .keyword{color: #555; font-size: 1rem; padding: 0 0 10px 0;}
+.masonry .item .content .people{ width: 100%; text-align: right; color: #999; font-size: 0.9rem; letter-spacing: 1px; padding-left: 10px;}
+.people span{padding-left: 10px;}
+.listArea{padding-top: 10px;}
+/*覆蓋*/
+.masonry .item .cover{ display:flex; justify-content: center; background-color:rgba(0, 0, 0, 0.7); width: 100%; height: 100%; position:absolute; top: 0; left:0; color: #fff; opacity:0; transition: opacity 0.5s; padding:1.2rem 1.4rem}
+.masonry .item .cover:hover{ opacity: 1; cursor: pointer;}
+.masonry .item .cover .listLink{text-decoration: none; display:block; width: 60px; height: 60px; background-repeat: no-repeat; background-size:cover; background-position: center center; border: none; position:static; align-self: center; margin:0 20px;}
+.masonry .item .cover .link{background-image: url(../images/link-out.png); transition: 0.3s;}
+.masonry .item .cover .folder{background-image: url(../images/folder-out.png);}
+.masonry .item .cover .link:hover{background-image: url(../images/link-hover.png);}
+.masonry .item .cover .folder:hover{background-image: url(../images/folder-hover.png);}
+
+/*次選單*/
+.secMenu{ margin-bottom: 10px;} 
+.secMenu .nav{justify-content: center;}
+.secMenu .nav-link{padding: 1rem .8rem; color: #777; font-family: 'Roboto','sans-serif','微軟正黑體','Microsoft JhengHei';}
+.secMenu .nav-link:hover{ color: #e4007f;}
+.listArea h3{ color: #484848; font-size: 1.4rem; margin-bottom: 20px; border-left:3px solid #e4007f; padding-left: 10px; }
+.fixTop{ width: 100%; background-color: #e4007f; position: fixed; top:0; z-index: 999;}
+.secMenu .white-txt{color: #fff;}
+.secMenu .white-txt:hover{color: #000;}
+.secMenu .black-txt{color: #000;}
+.secMenu .active{color: #000;}
+.lessTxt{display: none;}
+
+@media (max-width: 820px){
+    .masonry .item .cover .listLink{margin:0 15px;}
+}
+@media (max-width: 768px){
+    .secMenu .nav-link{ padding: .8rem .8rem;}
+    .secMenu{ padding-left: 16px;}
+    .secMenu .nav{justify-content: left;}
+    .moreTxt{display: none;}
+    .lessTxt{display: inline-block;}
+}
+@media (max-width: 540px){
+    .masonry .item .content h4{font-size: 1.2rem; }
+    .masonry .item .content .date{font-size: 0.7rem;}
+    .masonry .item .content .keyword{font-size: 0.9rem;}
+    .masonry .item .content .people{font-size: 0.7rem;}
+    .listArea h3{ font-size: 1.2rem; margin-bottom: 10px; padding-left: 10px;}
+    .listArea{padding-top: 10px;}
+    .secMenu .nav-link{ padding: .6rem .4rem; font-size: 1rem;}
+}
+.topButton{width: 50px; height: 40px; background-repeat: no-repeat; background-size:cover; background-position: center center; position:fixed; bottom:5%; right: 1.5%; background-image: url(../images/top.png); cursor: pointer; display: none;}
+/*Footer頁尾*/
+footer { background-color: rgba(0, 0, 0, 0.7); /*position: fixed; bottom: 0%;*/}
+footer p{padding: 0.8rem 1rem; color: white; margin: 0; text-align: center; font-size: 14px;}
+@media (max-width: 576px){
+    footer { background-color: #444; position: static;}
+    footer p{padding: 0.8rem 1.5rem; color: white; margin: 0; text-align: center; font-size: 12px;}
+}
+
+/*測試用*/
