@@ -25,6 +25,10 @@ body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-seri
 .navbar-collapse .btn{ text-indent: -9999px; background: url(../images/search_out.png); background-repeat: no-repeat; background-size: contain; background-position: left bottom; width: 32px; height: 44px; cursor: pointer;}
 .navbar-collapse .btn:hover{background: url(../images/search_hover.png); background-repeat: no-repeat; background-size: contain; background-position: left bottom; width: 32px; height: 44px;}
 .nav-item span{ display: none;}
+.dropdown-menu{display: none; background-color: rgba(100,70,95,0.7); width: 100%; margin: 0 auto; top: 99%; left: 0%; border-radius:0px; border:none; padding: .3rem 0; min-width: 8rem;}
+.dropdown-item{ color: #fff; padding: .3rem .5rem; text-align: center;}
+.dropdown-item:hover{ background-color: transparent;}
+.dropdown-toggle:after{display: none;}
 
 @media (max-width: 992px){
     .navbar-brand{ display: block; width: 60px; padding: 23px 0; margin: 0;}
@@ -45,7 +49,7 @@ body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-seri
     .navbar-light .navbar-toggler { color: rgba(255,255,255); border-color: transparent;}
     .navbar-collapse .btn{ width: 28px; height: 44px;}
     .navbar-collapse .btn:hover{ width: 28px; height: 44px;}
-    
+    .dropdown-menu{ top: 102%; left: -7%; min-width: 8rem; } 
 }
 @media (max-width: 767px){
     .container-fluid{background-image: none; background-repeat: repeat; padding-left: 0px; padding-right: 0px;}

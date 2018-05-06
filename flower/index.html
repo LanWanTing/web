@@ -25,6 +25,7 @@
     <script src="js/jquery.wow-1.0.3.min.js"></script>
     <script>
         new WOW().init();
+
     </script>
     <script>
         var wow = new WOW({
@@ -55,8 +56,15 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="https://www.google.com/"><span>關於芊芳</span>About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href=""><span>精品花藝</span>Products</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span>精品花藝</span>Products
+                            </a>
+                            <div class="dropdown-menu" >
+                                <a class="dropdown-item" href="#">新娘捧花</a>
+                                <a class="dropdown-item" href="#">藝術盆花</a>
+                                <a class="dropdown-item" href="#">高價藝術花籃</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><span>最新消息</span>News</a>
@@ -70,7 +78,7 @@
                     </ul>
                     <button class="btn my-2 my-sm-0" type="submit">Search</button>
                 </div>
-                
+
             </nav>
         </div>
         <div class="yLine"></div>
