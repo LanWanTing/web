@@ -11,12 +11,12 @@ $(function () {
     });
     var viewW = $(window).width();
     if (viewW > 992) {
-        $('.navbar-nav .nav-item').hover(function () {
+        $('.navbar-nav .nav-item').eq(1).hover(function () {
             if (off == 1) {
-                $('.dropdown-menu').addClass('show').fadeIn(300);
+                $('.dropdown-menu').addClass('show').fadeIn(500);
                 off = 0;
             } else {
-                $('.dropdown-menu').removeClass('show').fadeOut(300);
+                $('.dropdown-menu').removeClass('show').fadeOut(500);
                 off = 1;
             }
         });
