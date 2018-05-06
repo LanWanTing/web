@@ -1,7 +1,7 @@
 /*共用設定*/
 *{ margin: 0; padding: 0;}
 body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-serif','微軟正黑體','Microsoft JhengHei';}
-
+button:focus{outline: none;}
 /*Nav導覽列*/
 .container-fluid {background-image: url(../images/menubk.png); background-repeat: repeat-x; position: relative;}
 .container { max-width: 1280px; }
@@ -29,7 +29,10 @@ body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-seri
 .dropdown-item{ color: #fff; padding: .3rem .5rem; text-align: center;}
 .dropdown-item:hover{ background-color: transparent;}
 .dropdown-toggle:after{display: none;}
-
+.form-inline .form-control{display:none; width: 14rem; opacity: 0; transition: opacity 1s;}
+.form-inline{position: relative;}
+.form-control{position: absolute; bottom:-4.78rem; left: -11.1rem; border-radius: 0; border: none; background-color:rgba(255,255,255,1); color: #fff; padding: .5rem 1rem;}
+.form-inline .formShow{display:inline-block; opacity: 1;}
 @media (max-width: 992px){
     .navbar-brand{ display: block; width: 60px; padding: 23px 0; margin: 0;}
     .web{display: none;}
@@ -47,9 +50,9 @@ body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-seri
     .navbar-nav .nav-item:nth-child(4) .nav-link:hover{ background:none; color: #fff;}
     .navbar-nav .nav-item:nth-child(5) .nav-link:hover{ background:none; color: #fff;}
     .navbar-light .navbar-toggler { color: rgba(255,255,255); border-color: transparent;}
-    .navbar-collapse .btn{ width: 28px; height: 44px;}
-    .navbar-collapse .btn:hover{ width: 28px; height: 44px;}
-    .dropdown-menu{ top: 102%; left: -7%; min-width: 8rem; } 
+    .navbar-collapse .btn{ width: 32px; height: 44px;}
+    .navbar-collapse .btn:hover{ width: 32px; height: 44px;}
+    .dropdown-menu{ top: 102%; left: -7%; min-width: 8rem; }
 }
 @media (max-width: 767px){
     .container-fluid{background-image: none; background-repeat: repeat; padding-left: 0px; padding-right: 0px;}
