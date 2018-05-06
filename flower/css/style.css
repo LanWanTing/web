@@ -65,8 +65,9 @@ body,html{height: 100%; background-color: #fff; font-family: 'Roboto','sans-seri
     .navbar-collapse{ background-color: rgba(0,0,0,0.4); align-self: stretch;}
     .navbar-nav{ padding-left: 0; }
     .navbar-expand-md .navbar-nav .nav-item {width:100%; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .navbar-expand-md .navbar-nav .nav-link{padding:3% 6%; color: #fff; font-size:18px;}
+    .navbar-expand-md .navbar-nav .nav-link{padding:4% 6%; color: #fff; font-size:18px;}
     .nav-item span{ display: inline-block; padding: 0 5px;}
+    .dropdown-item{ padding: .8rem 0;}
 }
 
 
