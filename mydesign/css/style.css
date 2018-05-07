@@ -75,8 +75,6 @@ button:focus{outline:none;}
     .secMenu .nav{justify-content: left;}
     .moreTxt{display: none;}
     .lessTxt{display: inline-block;}
-    .navbar-toggler-icon{background-size:100% 100%; transform-origin: center center; transform: rotate(0deg); transition: transform .3s;}
-    .btnOn{transform-origin: center center; transform: rotate(90deg); }
 }
 @media (max-width: 540px){
     .masonry .item .content h4{font-size: 1.2rem; }
