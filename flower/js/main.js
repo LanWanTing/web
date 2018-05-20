@@ -1,16 +1,66 @@
+
+$(function () {
+    var viewW = $(window).width();
+    if (viewW > 768) {
+        $('.menuBar li').hover(function () {
+            if ($('.searchForm').is(':visible')) {
+                $(this).children('.subBar').css({
+                    'background': 'transparent'
+                });
+            } else {
+                $(this).children('.subBar').css({
+                    'background': 'rgba(100,70,95,0.7)'
+                });
+            }
+        });
+    } else {
+        $('.menuBar li').hover('style').hide();
+    }
+});
+/*主選單被hover時要出現次選單
+$('.menuBar li').hover(function () {
+    var menuSub = $(this);
+    menuSub.children('.subBar').stop(false, true).fadeIn(300);
+}, function () {
+    var menuSub = $(this);
+    menuSub.children('.subBar').stop(false, true).fadeOut(300);
+});
+*/
+/*主選單被hover且searchForm為顯示的狀態，則次選單的背景要隱藏or顯示
+    $('.menuBar li').hover(function () {
+        if ($('.searchForm').is(':visible')) {
+            $(this).children('.subBar').css({
+                'background': 'transparent'
+            });
+        } else {
+            $(this).children('.subBar').css({
+                'background': 'rgba(100,70,95,0.7)'
+            });
+        }
+    });
+*/
+/*search被按時，search表單要隱藏or顯示&search表單背景顏色設定*/
 $(function () {
     var off = 1;
-    $('.navbar-toggler').click(function () {
+    $('.searchBtn').click(function () {
         if (off == 1) {
-            $('.navbar-toggler-icon').addClass('btnOn');
+            $('.searchForm').fadeIn(300);
+            $('.searchForm').css({
+                'background': 'rgba(100,70,95,0.7)'
+            });
             off = 0;
         } else {
-            $('.navbar-toggler-icon').removeClass('btnOn');
+            $('.searchForm').fadeOut(300);
+            $('.searchForm').css({
+                'background': 'transparent'
+            });
             off = 1;
         }
     });
 });
-/*視窗大於767 search直接顯示*/
+/*以上是width<1200的js*/
+
+/*視窗大於767 search直接顯示
 $(function () {
     var off = 1;
     var viewW = $(window).width();
@@ -25,27 +75,38 @@ $(function () {
             }
         });
     } else {
-        $('.form-inline .btn').click(function(){
+        $('.form-inline .btn').click(function () {
             $('.form-control').addClass('formShow');
         });
         $('.form-control').addClass('formShow')
     }
 });
-/*視窗小於992 hover效果隱藏*/
+*/
+/*視窗小於768 hover效果隱藏*/
 $(function () {
     var off = 1;
     var viewW = $(window).width();
-    if (viewW > 992) {
-        $('.navbar-nav .nav-item').eq(1).hover(function () {
-            if (off == 1) {
-                $('.dropdown-menu').addClass('show');
-                off = 0;
-            } else {
-                $('.dropdown-menu').removeClass('show');
-                off = 1;
-            }
+    if (viewW > 768) {
+        $('.menuBar li').hover(function () {
+            $(this).children('.subBar').stop(false, true).fadeIn(300);
+        }, function () {
+            $(this).children('.subBar').stop(false, true).fadeOut(300);
         });
     } else {
-        $('.navbar-nav .nav-item').hover('style').hide();
+        /*$('.menuBar li').hover('style').hide();*/
+        $('.menuBar li').click(function () {
+            $(this).children('.subBar').stop(false, true).slideToggle(300);
+        });
     }
 });
+
+
+
+
+
+
+
+
+
+
+

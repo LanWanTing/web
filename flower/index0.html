@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lan="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>芊芳花藝</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <!--bootstrap4 css-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--google字型  選單用-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--animate微動畫-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--共用css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--jquery-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--bootstrap4 js-->
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--捲動效果-->
+    <script src="js/jquery.wow-1.0.3.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'fadeInUp', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true, // 手機上是否要套用動畫 (預設是true)
+        });
+        wow.init();
+    </script>
+    <!--共用js-->
+    <script src="js/main.js"></script>
+</head>
+
+<body style="background-color: #000;">
+    <!--主選單開始-->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand web" href="#"><img src="images/logo.png" width="100%"></a>
+                <a class="navbar-brand table" href="#"><img src="images/logo_m.png" width="100%"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html"><span>關於芊芳</span>About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span>精品花藝</span>Products
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="goods.html">新娘捧花</a>
+                                <a class="dropdown-item" href="goods.html#">藝術桌花</a>
+                                <a class="dropdown-item" href="goods.html">花卉盆景</a>
+                                <a class="dropdown-item" href="goods.html">會場佈置</a>
+                                <a class="dropdown-item" href="goods.html">精品花束</a>
+                                <a class="dropdown-item" href="goods.html">高價藝術花籃</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html"><span>最新消息</span>News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html"><span>訂購方式</span>Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><span>聯絡我們</span>Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <button class="btn my-2 my-sm-0" type="button" style="box-shadow: rgba(255,255,255,0) 0px 0px 0px 0px;">Search</button>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="yLine"></div>
+    </div>
+
+</body>
+
+</html>
