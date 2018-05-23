@@ -100,6 +100,31 @@ $(function () {
     }
 });
 
+/*視窗小於768 hover效果隱藏*/
+$(function () {
+    var off = 1;
+    var viewW = $(window).width();
+    if (viewW > 768) {
+        $('.toggleBtn').hide();
+    } else {
+        $('.toggleBtn').click(function () {
+            if (off == 1) {
+                $('.lineA1').addClass('lineA2');
+                $('.lineB1').addClass('lineB2');
+                $('.lineC1').addClass('lineC2');
+                $('.mainMenu').stop(false, true).slideDown(500);
+                off = 0;
+            }else{
+                $('.lineA1').removeClass('lineA2');
+                $('.lineB1').removeClass('lineB2');
+                $('.lineC1').removeClass('lineC2');
+                $('.mainMenu').stop(false, true).slideUp(500);
+                off = 1;
+            }
+        });
+    }
+});
+
 
 
 

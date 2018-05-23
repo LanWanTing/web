@@ -73,28 +73,37 @@ header h1 .logo{display:block; margin: 0; width: 205px; height: 55px; background
     header h1{position: static; padding: 20px;}
     header h1 .logo{background: url(../images/logo.png) no-repeat 0 0; background-size: cover; width: 205px; height: 55px;}
     .yLine{ display: none;}
-    .mainMenu{display:block; position: absolute; width: 100%; left:0}
-    .toggleBtn{display:block; position: absolute; width: 50px; height: 70px;  right: 0; top: 12px; background: none; border: 0px;  }
-    /*
-    .lineOne{transform-origin: center center; transform: rotate(45deg);}
-    .lineTwo{transform-origin: center center; transform: rotate(-45deg);}
-    .lineThree{ transform: translate(-100px,0); }
-    */
-    .threeline{display: block; width: 30px; height: 2px; background:#fff; margin: 0; margin-top: 8px; opacity: 1; transition:transform .5s,opacity .5s;}
+    .mainMenu{display:none; position: absolute; width: 100%; left:0}
+    .toggleBtn{display:block; position: absolute; width: 50px; height: 50px; right: 10px; top: 25px; background: none; border: none; padding: 15px 10px; overflow:hidden;}
+    .lineBox{position: relative; width: 100%; height: 20px; }
+    .lineBox .threeLine{display: inline-block; position: absolute; left: 0; top: 0; width: 30px; height: 2px; background:#fff; opacity: 1;  
+        transition:transform .5s,opacity .5s; -webkit-transition:transform .5s,opacity .5s; -ms-transition:transform .5s,opacity .5s; -moz-transition:transform .5s,opacity .5s;
+        transform-origin:50% 50%; -webkit-transform-origin:50% 50%; -ms-transform-origin:50% 50%; -moz-transform-origin:50% 50%;
+    }
+    .lineBox .lineA1{ top:0;}
+    .lineBox .lineB1{ top:50%;}
+    .lineBox .lineC1{ top:98%;}
+    .lineBox .lineA2{ transform: rotate(-45deg) translateY(6px) translateX(-8px);}
+    .lineBox .lineB2{ transform: translate(0,0) translateX(100px); opacity:0;}
+    .lineBox .lineC2{ transform: rotate(45deg) translateY(-6px) translateX(-8px);}
     .menuBar{ width: 100%; background: rgba(100,70,95,0.7); margin: 0;}
     .menuBar>li{text-align: left; float: none; }
-    .menuBar>li>a{ width: 100%; background: transparent; color: #fff; font-size: 18px; font-family: 'Microsoft JhengHei', sans-serif; padding: 15px 0 15px 40px; /*border-bottom: 1px solid rgba(0,0,0,0.2);*/ }
+    .menuBar>li>a{ width: 100%; background: transparent; color: #fff; font-size: 18px; font-family: 'Microsoft JhengHei', sans-serif; padding: 15px 0 15px 30px; /*border-bottom: 1px solid rgba(0,0,0,0.2);*/ }
     .subBar{display: none; position: static; width: 100%; line-height: 52px; background: rgba(100,70,95,0.7);}
     .subBar ul{list-style: none; overflow: hidden; width: 100%; margin: 0; text-align: center; }
     .subBar li{text-align: left; float: none; }
-    .subBar li a{padding: 0 60px; }
+    .subBar li a{padding: 0 0 0 40px; }
     .subBar li a:hover{color: #fff;}
     .searchBtn{display: none;}
-    .searchForm{display: block; background:rgba(100,70,95,0.7);}
+    .searchForm{display: block; background:rgba(100,70,95,0.7); padding:0 25px 10px; padding-bottom: 15px; bottom:-65px; text-align: left;}
+    .searchTxt{width: 100%; }
 }
-
-
-
+/*寬度576以下*/
+@media screen and (max-width: 576px) {
+    header h1{ padding: 16px;}
+    header h1 .logo{background: url(../images/logo.png) no-repeat 0 0; background-size: cover; width: 180px; height: 48px;}
+    .toggleBtn{ top: 20px;}
+}
 
 /*顯示隱藏*/
 .boxShow{display: block;}
