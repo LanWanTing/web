@@ -33,7 +33,6 @@ button:focus{outline:none;}
 .wrapper, .workWrapper { min-height: 100%; width: 100%; padding-top: 80px; padding-bottom: 70px; background: #fff;}
 .container-fluid{overflow: hidden; padding-right: 30px; padding-left: 30px;}
 .col-xl-3, .col-md-4, .col-sm-6, .col-12{ padding-right: 10px; padding-left: 10px; padding-bottom: 20px;}
-.masonry .item {opacity: 0;}
 .masonry .item .listBox{ padding: 0px; border:1px solid #ddd; position: relative;}
 /*內容*/
 .masonry .item .content{ display:flex; justify-content:left; align-items:left; flex-direction: column; text-align:left; background-color:rgba(0, 0, 0, 0); width: 100%; position:relative; color: #fff; opacity:1; transition: opacity 0.5s; padding:1.2rem 1.4rem}

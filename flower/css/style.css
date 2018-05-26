@@ -1,8 +1,10 @@
+
 /*共用設定*/
 *{ margin: 0; padding: 0;}
 body,html{width: 100%; height: 100%; background-color: #fff; font-family: 'Roboto','sans-serif','微軟正黑體','Microsoft JhengHei';}
 button:focus{outline: none;}
 input:focus{outline:none}
+
 /*Nav導覽列*/
 .mainWrapper{display: block; width: 100%; background: url(../images/menubk.png) repeat-x; position: relative;}
 /*.mainCenter{display: block; max-width: 1280px; height: 100%; margin: 0 auto; box-sizing: border-box; padding: 0 20px;}*/
@@ -73,12 +75,19 @@ header h1 .logo{display:block; margin: 0; width: 205px; height: 55px; background
     header h1{position: static; padding: 20px;}
     header h1 .logo{background: url(../images/logo.png) no-repeat 0 0; background-size: cover; width: 205px; height: 55px;}
     .yLine{ display: none;}
-    .mainMenu{display:none; position: absolute; width: 100%; left:0}
+    .mainMenu{display:none; position: absolute; width: 100%; left:0;}
     .toggleBtn{display:block; position: absolute; width: 50px; height: 50px; right: 10px; top: 25px; background: none; border: none; padding: 15px 10px; overflow:hidden;}
     .lineBox{position: relative; width: 100%; height: 20px; }
-    .lineBox .threeLine{display: inline-block; position: absolute; left: 0; top: 0; width: 30px; height: 2px; background:#fff; opacity: 1;  
-        transition:transform .5s,opacity .5s; -webkit-transition:transform .5s,opacity .5s; -ms-transition:transform .5s,opacity .5s; -moz-transition:transform .5s,opacity .5s;
-        transform-origin:50% 50%; -webkit-transform-origin:50% 50%; -ms-transform-origin:50% 50%; -moz-transform-origin:50% 50%;
+    .lineBox .threeLine{ display: inline-block; position: absolute; left: 0; top: 0; width: 30px; height: 2px; background:#fff; opacity: 1; 
+        -webkit-transition:transform .5s,opacity .5s;
+        -moz-transition:transform .5s,opacity .5s;
+        -ms-transition:transform .5s,opacity .5s;
+        transition:transform .5s,opacity .5s;
+        
+        -webkit-transform-origin:50% 50%;
+        -moz-transform-origin:50% 50%;
+        -ms-transform-origin:50% 50%;
+        transform-origin:50% 50%;
     }
     .lineBox .lineA1{ top:0;}
     .lineBox .lineB1{ top:50%;}
