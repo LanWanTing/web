@@ -104,8 +104,8 @@ header h1 .logo{display:block; margin: 0; width: 205px; height: 55px; background
     .subBar li a{padding: 0 0 0 40px; }
     .subBar li a:hover{color: #fff;}
     .searchBtn{display: none;}
-    .searchForm{display: block; background:rgba(100,70,95,0.7); padding:0 25px 10px; padding-bottom: 15px; bottom:-65px; text-align: left;}
-    .searchTxt{width: 100%; }
+    .searchForm{display: block; background:rgba(100,70,95,0.7); padding:0 25px 15px; bottom:-65px; text-align: left;}
+    .searchTxt{width: 100%; box-sizing: border-box; }
 }
 /*寬度576以下*/
 @media screen and (max-width: 576px) {
