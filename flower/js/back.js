@@ -7,15 +7,14 @@ $(function () {
                 src: "./images/banner/bk1.jpg"
             },
             {
-                src: "./images/banner/bk4.jpg"
+                src: "./images/banner/bk7.jpg"
             },
             {
-                src: "./images/banner/bk6.jpg"
+                src: "./images/banner/bk4.jpg"
             },
             {
                 src: "./images/banner/bk8.jpg"
             }
-    ],
-        overlay: './images/01.png',
+    ]
     });
 });

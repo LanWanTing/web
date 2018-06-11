@@ -4,12 +4,24 @@ body,html{width: 100%; height: 100%; background-color: #fff; font-family: 'Robot
 button:focus{outline: none;}
 input:focus{outline:none}
 
-/*old背景圖片*/
-#mainBack{width: 100%; position: relative; overflow:hidden; }
+/*背景圖片*/
+#mainBack{width: 100%; height: 100%; min-height: 100%; overflow:hidden; background-size: cover; background-attachment: fixed;}
 #mainContent1{width: 100%; height: 2500px; background: #fff; margin: 0 auto;}
 #mainContent2{width: 100%; height: 40%; background: url(../images/banner/bk7.jpg) 50% 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
 #mainContent3{width: 100%; height: 500px; background: #fff; margin: 0 auto;}
-
+.scrollIcon{ position: absolute; bottom:30px; left:50%; width: 22px; height: 45px; border-radius: 30px; border: 2.2px solid rgba(255,255,255,.6);}
+.scrollIcon .scroll{ position: absolute; bottom:23px; left:42.5%; width: 3px; height: 15px; border-radius: 10px; background-color: rgba(255,255,255,.8); 
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    
+    -webkit-animation: scroll .8s ease infinite alternate;
+    -moz-animation: scroll .8s ease infinite alternate;
+    -o-animation: scroll .8s ease infinite alternate;
+    animation: scroll .8s ease infinite alternate;
+}
 -webkit-@keyframes scroll{
     from{transform: translate(0px,0px);}
     to{transform: translate(0px,10px);}
@@ -26,8 +38,6 @@ input:focus{outline:none}
     from{transform: translate(0px,0px);}
     to{transform: translate(0px,10px);}
 }
-/*new背景圖片*/
-
 /*Nav導覽列*/
 header{width: 100%; background: url(../images/menubk.png) repeat-x; position: fixed; top:0; left:0;}
 header .yLine{ width: 100%; height: 2.4px; background-color: #fdd23e; position: absolute; bottom: 8px; left: 0;}
@@ -140,23 +150,9 @@ header h1 .logo{display:block; width: 205px; height: 55px; background: url(../im
     header .toggleBtn{ display: block; top: 20px;}
 }
 
-/*刪除的css
+/*顯示隱藏*/
 .boxShow{display: block;}
----捲動提示
-.scrollIcon{ position: absolute; bottom:30px; left:50%; width: 22px; height: 45px; border-radius: 30px; border: 2.2px solid rgba(255,255,255,.6);}
-.scrollIcon .scroll{ position: absolute; bottom:23px; left:42.5%; width: 3px; height: 15px; border-radius: 10px; background-color: rgba(255,255,255,.8); 
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    
-    -webkit-animation: scroll .8s ease infinite alternate;
-    -moz-animation: scroll .8s ease infinite alternate;
-    -o-animation: scroll .8s ease infinite alternate;
-    animation: scroll .8s ease infinite alternate;
-}
-*/
+
 
 
 

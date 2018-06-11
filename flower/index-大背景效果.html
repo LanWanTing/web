@@ -8,6 +8,8 @@
     <link href="favicon.ico" rel="icon">
     <link href="favicon.ico" rel="shortcut icon">
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <!--bootstrap4 css-->
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
     <!--google字型  選單用-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--animate微動畫-->
@@ -16,35 +18,15 @@
     <link rel="stylesheet" href="css/style.css">
     <!--jquery-->
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!--幻燈片-->
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/banner.css">
-    <script src="js/slick/slick.min.js"></script>
-    <script>
-        $(function() {
-            $('.slick').slick({
-                dots: true, //顯示輪播圖片會顯示圓圈
-                infinite: true, //重覆輪播
-                slidesToShow: 1, //輪播顯示個數
-                slidesToScroll: 1, //輪播捲動個數
-                autoplay: true, //autoplay : 自動播放
-                autoplaySpeed: 2000, //切換圖片間隔時間
-                fade: true, //淡入淡出
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                        dots: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false
-                    }
-                }, ]
-            });
-        });
-
-    </script>
+    <!--背景幻燈片-->
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <script src="js/vegas.min.js"></script>
+    <script src="js/back.js"></script>
+    <!--bootstrap4 js-->
+    <!--
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    -->
     <!--parallax-->
     <script src="js/parallax/jquery.parallax-1.1.3.js"></script>
     <script src="js/parallax/jquery.localscroll-1.2.7-min.js"></script>
@@ -77,6 +59,7 @@
             mobile: true, // 手機上是否要套用動畫 (預設是true)
         });
         wow.init();
+
     </script>-->
     <!--主選單js-->
     <script src="js/menu.js"></script>
@@ -85,11 +68,8 @@
 <body>
     <!--背景開始-->
     <div id="mainBack">
-        <div class="slick">
-            <div><a href="http://www.google.com"><img src="images/banner/bk7.jpg" alt="" width="100%"></a></div>
-            <div><a href="#"><img src="images/banner/bk5.jpg" width="100%"></a></div>
-            <div><a href="#"><img src="images/banner/bk2.jpg" width="100%"></a></div>
-            <div><a href="#"><img src="images/banner/bk3.jpg" width="100%"></a></div>
+        <div class="scrollIcon">
+            <div class="scroll"></div>
         </div>
     </div>
     <!--背景結束-->
