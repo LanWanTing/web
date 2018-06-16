@@ -5,18 +5,19 @@ button:focus{outline: none;}
 input:focus{outline:none}
 
 /*首頁區塊設定*/
-#mainBack{width: 100%; position: relative; overflow:hidden;}
+#mainBack{width: 100%; position: relative; overflow:hidden;z-index: 30;}
 #mainContent1{width: 100%; height: 2500px; background: #fff; margin: 0 auto;}
-#mainContent2{width: 100%; height: 40%; background: url(../images/banner/bk7.jpg) 50% 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
+#mainContent2{width: 100%; height: 40%; background: url(../images/banner/bk7.jpg) 0 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
 #mainContent3{width: 100%; height: 500px; background: #fff; margin: 0 auto;}
 }
 /*首頁banner*/
-.slick-prev, .slick-next{ width: 30px; height: 59px;}
-.slick-next{right: 40px;  }
-.slick-prev{left: 40px; z-index: 50; }
+.slick-prev, .slick-next{width: 30px; height: 60px; }
+.slick-next{right: 40px; width: 30px; height: 60px; top:53.5%;}
+.slick-prev{left: 40px; z-index: 50; width: 30px; height: 60px; top:55%;}
+
 .slick-next:before{content: ''; content: url(../images/next.png); }
 .slick-prev:before{content: ''; content: url(../images/prev.png); }
-.slick-prev:before,.slick-next:before{ opacity: 0.5;}
+.slick-prev:before,.slick-next:before{ opacity: .6;}
 .slick-dots{ bottom: 3%;}
 .slick-dots li{margin: 0;}
 .slick-dots li button:before{ color: #fff;}
