@@ -4,32 +4,33 @@ body,html{width: 100%; height: 100%; background-color: #fff; font-family: 'Robot
 button:focus{outline: none;}
 input:focus{outline:none}
 
-/*old背景圖片*/
-#mainBack{width: 100%; position: relative; overflow:hidden; }
+/*首頁區塊設定*/
+#mainBack{width: 100%; position: relative; overflow:hidden;}
 #mainContent1{width: 100%; height: 2500px; background: #fff; margin: 0 auto;}
-#mainContent2{width: 100%; height: 40%; background: url(../images/banner/bk7.jpg) 50% 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
+#mainContent2{width: 100%; height: 40%; background: url(../images/banner/ibk7.jpg) 50% 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
 #mainContent3{width: 100%; height: 500px; background: #fff; margin: 0 auto;}
-
--webkit-@keyframes scroll{
-    from{transform: translate(0px,0px);}
-    to{transform: translate(0px,10px);}
 }
--moz-@keyframes scroll{
-    from{transform: translate(0px,0px);}
-    to{transform: translate(0px,10px);}
+/*首頁banner*/
+.slick-prev, .slick-next{ width: 30px; height: 59px;}
+.slick-next{right: 40px;  }
+.slick-prev{left: 40px; z-index: 50; }
+.slick-next:before{content: ''; content: url(../images/next.png); }
+.slick-prev:before{content: ''; content: url(../images/prev.png); }
+.slick-prev:before,.slick-next:before{ opacity: 0.5;}
+.slick-dots{ bottom: 3%;}
+.slick-dots li{margin: 0;}
+.slick-dots li button:before{ color: #fff;}
+.slick-dots li.slick-active button:before{color: #fff;}
+.slick-dotted.slick-slider{ margin-bottom: 0px;}
+.slick .mb{display: none;}
+.slick-slider .pc{ height: 100vh;}
+.slick-slider .pc a{display: block; height: 100vh;}
+.slick-slider .pc img {position: relative;  width: 100%; height: auto; top: 50%; left: 50%; transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%);}
+@media (max-aspect-ratio: 16/9){
+    .slick-slider .pc img {width: auto;height: 100%;}
 }
--o-@keyframes scroll{
-    from{transform: translate(0px,0px);}
-    to{transform: translate(0px,10px);}
-}
-@keyframes scroll{
-    from{transform: translate(0px,0px);}
-    to{transform: translate(0px,10px);}
-}
-/*new背景圖片*/
-
-/*Nav導覽列*/
-header{width: 100%; background: url(../images/menubk.png) repeat-x; position: fixed; top:0; left:0;}
+/*header*/
+header{width: 100%; background: url(../images/menubk.png) repeat-x; position: fixed; top:0; left:0; z-index: 60;}
 header .yLine{ width: 100%; height: 2.4px; background-color: #fdd23e; position: absolute; bottom: 8px; left: 0;}
 header .toggleBtn{display:none;}
 header h1{position: absolute; top:28px; left:50px; transition: left .5s,top .5s;}
@@ -59,11 +60,11 @@ header h1 .logo{display:block; width: 205px; height: 55px; background: url(../im
 .searchTxt{ width: 200px; height: 35px; border-radius: 6px; border: none; padding: 0 20px 0 16px; font-size: 16px; vertical-align: middle; font-family: 'Roboto','Microsoft JhengHei', sans-serif; color: #60235a;}
 .searchTxt:focus{border: 1px solid  rgba(100,70,95);}
 .searchSubmit{width: 25px; height: 25px; position: absolute; top:13px; right: 60px; background-color: #fff; background: url(../images/btnsubmit.png) no-repeat 0 0; background-size: cover; text-indent: -9999px; border:none; cursor: pointer;}
-/*mainContent*/
 
 
 /*寬度1280以下*/
 @media screen and (max-width: 1280px) {
+    .slick-slider .pc img {width: auto;height: 100%;}
     header h1{left:30px; top:30px;}
     header h1 .logo{width: 190px; height: 51px;}
     .menuBar{ margin:0 0 0 240px;}
@@ -74,6 +75,8 @@ header h1 .logo{display:block; width: 205px; height: 55px; background: url(../im
 }
 /*寬度992以下*/
 @media screen and (max-width: 992px) {
+    .slick .pc{display: none;}
+    .slick .mb{display: block;}
     .scrollIcon{display: none;}
     header h1{left:30px; top:22px;}
     header h1 .logo{background: url(../images/logo_m.png) no-repeat 0 0; background-size: cover; width: 60px; height: 60px;}
@@ -95,7 +98,6 @@ header h1 .logo{display:block; width: 205px; height: 55px; background: url(../im
 }
 /*寬度768以下*/
 @media screen and (max-width: 768px) {
-    #mainBack{width: 100%; height: 50%; overflow:hidden; background-size: cover; background-attachment: fixed;}
     .mainWrapper{display: block; width: 100%; background: #60235a; position: relative;}
     header {background:none; background-color:#60235a; }
     header h1{position: static; padding: 20px;}

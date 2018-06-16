@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lan="zh-Hant-TW">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
@@ -12,14 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--animate微動畫-->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <!--共用css-->
-    <link rel="stylesheet" href="css/style.css">
     <!--jquery-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <!--幻燈片-->
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/banner.css">
     <script src="js/slick/slick.min.js"></script>
     <script>
         $(function() {
@@ -29,7 +25,7 @@
                 slidesToShow: 1, //輪播顯示個數
                 slidesToScroll: 1, //輪播捲動個數
                 autoplay: true, //autoplay : 自動播放
-                autoplaySpeed: 2000, //切換圖片間隔時間
+                autoplaySpeed: 5000, //切換圖片間隔時間
                 fade: true, //淡入淡出
                 pauseOnHover: false,
                 responsive: [{
@@ -80,21 +76,31 @@
     </script>-->
     <!--主選單js-->
     <script src="js/menu.js"></script>
+    <!--共用css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--測試css-->  
+    <link rel="stylesheet" type="text/css" href="css/banner.css">
 </head>
 
 <body>
-    <!--背景開始-->
+    <!--banner開始-->
     <div id="mainBack">
         <div class="slick">
-            <div><a href="http://www.google.com"><img src="images/banner/bk7.jpg" alt="" width="100%"></a></div>
-            <div><a href="#"><img src="images/banner/bk5.jpg" width="100%"></a></div>
-            <div><a href="#"><img src="images/banner/bk2.jpg" width="100%"></a></div>
-            <div><a href="#"><img src="images/banner/bk3.jpg" width="100%"></a></div>
+            <div>
+                <div class="pc"><a href="http://www.google.com"><img src="images/banner/ibk1.jpg" alt="" width="100%"></a></div>
+                <div class="mb"><a href="http://www.google.com"><img src="images/banner/mbk7.jpg" alt="" width="100%"></a></div>
+            </div>
+            <div>
+                <div class="pc"><a href="#"><img src="images/banner/ibk2.jpg" alt="#"></a></div>
+                <div class="mb"><a href="http://www.google.com"><img src="images/banner/mbk5.jpg" alt="#" width="100%"></a></div>
+            </div>
+            <!--<div class="pc"><a href="#"><img src="images/banner/bk2.jpg" width="100%"></a></div>
+            <div class="pc"><a href="#"><img src="images/banner/bk3.jpg" width="100%"></a></div>-->
         </div>
     </div>
-    <!--背景結束-->
+    <!--banner結束-->
     <!--主選單開始-->
-    <header>
+    <header id="mainHeader">
         <button class="toggleBtn">
             <div class="lineBox"><span class="threeLine lineA1"></span><span class="threeLine lineB1"></span><span class="threeLine lineC1"></span></div>
         </button>
@@ -106,7 +112,7 @@
                 <li><a href="javascript:;" title="精品花藝">Products</a>
                     <div class="subBar">
                         <ul>
-                            <li><a href="product.html" title="新娘捧花">新娘捧花</a></li>
+                            <li><a href="product.html" title="贈禮花束">贈禮花束</a></li>
                             <li><a href="product.html" title="藝術盆花">藝術盆花</a></li>
                             <li><a href="product.html" title="蘭花盆栽">蘭花盆栽</a></li>
                             <li><a href="product.html" title="會場佈置">會場佈置</a></li>
@@ -127,6 +133,7 @@
     </header>
     <!--主選單結束-->
     <div id="mainContent1">
+        <h2 class="t1">當季花禮</h2>
 
     </div>
     <div id="mainContent2">

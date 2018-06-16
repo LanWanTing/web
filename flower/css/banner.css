@@ -1,24 +1,2 @@
-.slick { margin-top: 110px;}
-.slick-prev, .slick-next{ width: 30px; height: 59px;}
-.slick-next{right: 20px;  }
-.slick-prev{left: 20px; z-index: 50; }
-.slick-next:before{content: ''; content: url(../images/next.png); }
-.slick-prev:before{content: ''; content: url(../images/prev.png); }
-.slick-prev:before,.slick-next:before{ opacity: 0.5;}
-.slick-dots{ bottom: 3%;}
-.slick-dots li{margin: 0;}
-.slick-dots li button:before{ color: #fff;}
-.slick-dots li.slick-active button:before{color: #fff;}
-.slick-dotted.slick-slider{ margin-bottom: 0px;}
-/*寬度992以下*/
-@media screen and (max-width: 992px) {
-    .slick { margin-top: 100px;}
-}
-/*寬度768以下*/
-@media screen and (max-width: 768px) {
-    .slick { margin-top: 95px;}
-}
-/*寬度576以下*/
-@media screen and (max-width: 576px) {
-    .slick { margin-top: 80px;}
-}
+#mainContent1{ padding: 60px 0;}/*padding間距需要調整*/
+#mainContent1 h2.t1{text-align: center; font-size: 1.875rem;}
