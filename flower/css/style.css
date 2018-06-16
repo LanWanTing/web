@@ -7,7 +7,7 @@ input:focus{outline:none}
 /*首頁區塊設定*/
 #mainBack{width: 100%; position: relative; overflow:hidden;}
 #mainContent1{width: 100%; height: 2500px; background: #fff; margin: 0 auto;}
-#mainContent2{width: 100%; height: 40%; background: url(../images/banner/ibk7.jpg) 50% 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
+#mainContent2{width: 100%; height: 40%; background: url(../images/banner/bk7.jpg) 50% 0 no-repeat fixed; background-size: cover; margin: 0 auto; }
 #mainContent3{width: 100%; height: 500px; background: #fff; margin: 0 auto;}
 }
 /*首頁banner*/
