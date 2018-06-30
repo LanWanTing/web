@@ -1,2 +1,12 @@
-#mainContent1{ padding: 60px 0;}/*padding間距需要調整*/
-#mainContent1 h2.t1{text-align: center; font-size: 1.875rem;}
+#mainContent1{ width: 100%; background: #f4f4f4; box-sizing: border-box; padding: 5% 2%; }/*padding間距需要調整*/
+#mainContent1 h2.t1{text-align: center; font-size: 1.875rem;}/*文字大小需要調整*/
+#mainContent1 h6.t2{text-align: center; font-size: .9rem; font-weight: normal; padding-bottom:15px;}
+#mainContent1 .contentArea{width: 100%; overflow:hidden; margin:0 auto;}
+#mainContent1 .contentBox{display: inline-block; box-sizing: border-box; overflow: hidden; width: 25%;  padding: 15px;}/*padding間距、寬度需要調整*/
+#mainContent1 .contentBox a{display: inline-block; position: relative;  overflow: hidden; text-decoration: none;}
+#mainContent1 .contentBox .cover{display:none; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); position: absolute; left:0; top:0; box-sizing: border-box; padding: 12px;}
+#mainContent1 .txtBox{width: 100%; height: 100%; border: 3px solid #fff; box-sizing: border-box; text-align: center;}
+#mainContent1 .txtBox .txt{ font-size: 20px; color:#fff; position: relative; top:46%; left: 0;}
+#mainContent1 .txtBox .txt p{ margin-bottom:10px;}
+#mainContent1 .txtBox .txt .viewBox{width: 25%; margin: 0 auto; font-size: 15px; color:#fff; border: 1px solid #fff; padding: 5px 0; letter-spacing: 1px;}
+#mainContent1 .contentBox img{width: 100%; display: block; border: 1px solid #f4f4f4;}
