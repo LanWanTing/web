@@ -8,97 +8,131 @@
     <link href="favicon.ico" rel="shortcut icon">
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <!--bootstrap4 css-->
+    <!--微動畫css-->
+    <link rel="stylesheet" href="css/animate.css">
     <!--共用css-->
     <link rel="stylesheet" href="css/style.css">
-    <!--微動畫css-->
-    <link rel="stylesheet" href="css/animate.min.css">
     <!--google字型-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <!--jquery-->
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!--瀑布流-->
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script>
-        $(function() {
-            var $container = $('.masonry');
-            //當圖片讀取完畢才執行
-            $container.imagesLoaded(function() {
-                // initialize
-                $container.masonry({
-                    itemSelector: '.item'
-                })
-            });
-        });
-    </script>
     <!--圖片讀取完畢-->
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <!--速度函數表-->
     <script src="js/jquery.easing.1.3.js"></script>
-    <!--共用js-->
-    <script src="js/main.js"></script>
     <!--wow-->
-    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.wow-1.0.3.min.js"></script>
     <script>
-        var wh = $(window).height() / 10;
+        var wh = $(window).height() / 12;
         var wow = new WOW({
             offset: wh, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true,
+            live: true
         });
         wow.init();
     </script>
+    <!--共用js-->
+    <!--<script src="js/main.js"></script>-->
 </head>
 
 <body>
     <div id="iMain">
         <div class="mainWrap">
-            <ul class="proList masonry">
-                <li class="item">
+            <ul class="proList">
+                <li class="wow zoomIn" data-wow-delay="0s">
                     <a href="#" title="春遊瘋享樂"><img src="images/2018/2010118_2p.jpg" width="100%" alt="春遊瘋享樂">
                        <div class="cover"><div class="view">VIEW</div></div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0.1s">
                     <a href="#" title="心花朵朵開"><img src="images/2018/20180206_2p.jpg" width="100%" alt="心花朵朵開">
                         <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0s">
                     <a href="#" title="開工咖啡DAY"><img src="images/2018/20180221_1p.jpg" width="100%" alt="開工咖啡DAY">
 				        <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0.1s">
                     <a href="#" title="春上市"><img src="images/2018/20180305_1p.jpg" width="100%" alt="春上市">
 				        <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0s">
                     <a href="#" title="一眠大一吋"><img src="images/2018/20180401_1p.jpg" width="100%" alt="一眠大一吋">
 				        <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0.1s">
                     <a href="#" title="就愛跟你LINE一起"><img src="images/2018/20180528_1p.gif" width="100%" alt="就愛跟你LINE一起">
 				        <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0s">
                     <a href="#" title="momo雙享購"><img src="images/2018/20180610_1p.jpg" width="100%" alt="momo雙享購">
 				        <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0.1s">
                     <a href="#" title="今夏星冰樂"><img src="images/2018/20180625_1p.jpg" width="100%" alt="今夏星冰樂">
                         <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-                <li class="item">
+                <li class="wow zoomIn" data-wow-delay="0s">
                     <a href="#" title="沁夏來點名"><img src="images/2018/20180716_1p.jpg" width="100%" alt="沁夏來點名">
 				        <div class="cover"><div class="view">VIEW</div></div>
 			        </a>
                 </li>
-            </ul>
+                <li class="wow zoomIn" data-wow-delay="0.1s">
+                    <a href="#" title="春遊瘋享樂"><img src="images/2018/2010118_2p.jpg" width="100%" alt="春遊瘋享樂">
+                       <div class="cover"><div class="view">VIEW</div></div>
+                    </a>
+                </li>
+                <li class="wow zoomIn" data-wow-delay="0s">
+                    <a href="#" title="心花朵朵開"><img src="images/2018/20180206_2p.jpg" width="100%" alt="心花朵朵開">
+                        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn" data-wow-delay="0.1s">
+                    <a href="#" title="開工咖啡DAY"><img src="images/2018/20180221_1p.jpg" width="100%" alt="開工咖啡DAY">
+				        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn"  data-wow-delay="0s">
+                    <a href="#" title="春上市"><img src="images/2018/20180305_1p.jpg" width="100%" alt="春上市">
+				        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn" data-wow-delay="0.1s">
+                    <a href="#" title="一眠大一吋"><img src="images/2018/20180401_1p.jpg" width="100%" alt="一眠大一吋">
+				        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn" data-wow-delay="0s">
+                    <a href="#" title="就愛跟你LINE一起"><img src="images/2018/20180528_1p.gif" width="100%" alt="就愛跟你LINE一起">
+				        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn"  data-wow-delay="0.1s">
+                    <a href="#" title="momo雙享購"><img src="images/2018/20180610_1p.jpg" width="100%" alt="momo雙享購">
+				        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn" data-wow-delay="0s">
+                    <a href="#" title="今夏星冰樂"><img src="images/2018/20180625_1p.jpg" width="100%" alt="今夏星冰樂">
+                        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+                <li class="wow zoomIn" data-wow-delay="0.1s">
+                    <a href="#" title="沁夏來點名"><img src="images/2018/20180716_1p.jpg" width="100%" alt="沁夏來點名">
+				        <div class="cover"><div class="view">VIEW</div></div>
+			        </a>
+                </li>
+            </ul>           
+            <footer>COPYRIGHT&nbsp;&nbsp;&copy;&nbsp;&nbsp;TINA LAN PROFILE.&nbsp;&nbsp;&nbsp;&nbsp;ALL RIGHTS RESERVED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESIGN BY TINA LAN</footer>
         </div>
-        <footer>COPYRIGHT&nbsp;&nbsp;&copy;&nbsp;&nbsp;TINA LAN PROFILE.&nbsp;&nbsp;&nbsp;&nbsp;ALL RIGHTS RESERVED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESIGN BY TINA LAN</footer>
+        
     </div>
 </body>

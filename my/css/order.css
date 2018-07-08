@@ -1,0 +1,28 @@
+/* CSS Document */
+#pMain{width:100%; min-height:100%; background-color:#252525;}
+#pMain .pageWrap{ position: relative; width:100%; height: 100%; max-width: 1200px; margin:0 auto; background-color: #555;}
+.orderWrap{width: 100%; background-color: #fff; overflow: hidden; color:#484848;}
+.orderWrap li:nth-of-type(odd){ background-color:#ddd;}
+.orderWrap li:nth-of-type(even){ background-color:#eee;}
+.orderList .question{cursor: pointer; padding: 1rem;}
+.orderList .answer{display: none; background-color:#fff; padding: 1rem; line-height: 1.8rem;}
+.orderList .answer .answer1{list-style: none;}
+.answer1 li{line-height: 30px; padding: 0 0 1rem; padding-left: 40px;}
+.answer1 li:nth-of-type(1){background: url(../images/orderlist1.png)left top no-repeat; background-size: 30px;}
+.answer1 li:nth-of-type(2){background: url(../images/orderlist2.png)left top no-repeat; background-size: 30px;}
+.answer1 li:nth-of-type(3){background: url(../images/orderlist3.png)left top no-repeat; background-size: 30px;}
+.answer1 li:nth-of-type(4){background: url(../images/orderlist4.png)left top no-repeat; background-size: 30px;}
+.answer1 li:nth-of-type(5){background: url(../images/orderlist5.png)left top no-repeat; background-size: 30px;}
+.answer1 li:nth-of-type(6){background: url(../images/orderlist6.png)left top no-repeat; background-size: 30px;}
+@media screen and (min-width:1200px){
+	
+}
+@media screen and (min-width:992px){
+	
+}
+@media screen and (min-width:768px){
+	
+}
+@media screen and (min-width:576px){
+	
+}
