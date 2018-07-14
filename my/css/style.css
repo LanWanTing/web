@@ -28,39 +28,160 @@ input:focus {
 
 #iMain header {
     width: 100%;
-    min-height: 4.6rem;
-    background-color: #f7f7f7;
+    min-height: 80px;
+    background-color: #f2f2f2;
     position: fixed;
     z-index: 50;
-    padding: 1.2rem 3.5rem 0;
+    padding: .8rem 4rem 0;
+    text-indent: -9999px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 header h1 {
-    position: relative;
-    width: 85px;
-    height: 36px;
+    width: 275px;
+    height: 45px;
     background: url(../images/logo.png) 0 0 no-repeat;
     background-size: contain;
-
-    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
-header .menuWrap {}
+header .menuBtn {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    width: 26px;
+    height: 18px;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.menuBtn span {
+    display: block;
+    background-color: #252525;
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+
+}
+
+.menuBtn span:nth-child(1) {
+    top: 0;
+    right: 0;
+}
+
+.menuBtn span:nth-child(2) {
+    top: 8px;
+    right: 0;
+}
+
+.menuBtn span:nth-child(3) {
+    top: 16px;
+    right: 0;
+}
+
+.lineA1 {
+    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+}
+
+.lineB1 {
+    -webkit-transform: translate(0, 0) translateX(100px);
+    -moz-transform: translate(0, 0) translateX(100px);
+    -ms-transform: translate(0, 0) translateX(100px);
+    -o-transform: translate(0, 0) translateX(100px);
+    transform: translate(0, 0) translateX(100px);
+    opacity: 0;
+}
+
+.lineC1 {
+    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+}
+
+@media screen and (max-width:1200px) {
+    #iMain header {
+        padding: .8rem 2.1rem 0;
+    }
+    header .menuBtn {
+        right: 2.1rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #iMain header {
+        padding: .8rem 2.1rem 0;
+    }
+    header .menuBtn {
+        right: 2.1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #iMain header {
+        padding: .8rem 1.5rem 0;
+    }
+    header .menuBtn {
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #iMain header {
+        padding: .6rem 1rem 0;
+        min-height: 60px;
+    }
+    header h1 {
+        width: 200px;
+        height: 36px;
+        background: url(../images/logo.png) 0 0 no-repeat;
+        background-size: contain;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+    header .menuBtn {
+        top:1.4rem;
+        right: 1rem;
+    }
+}
+
 
 /*首頁list================================================================================*/
 
 #iMain {
     width: 100%;
     min-height: 100%;
-    background-color: #252525;
     position: relative;
 }
 
 #iMain .mainWrap {
     width: 100%;
-    min-width: 1200px;
-    padding: 8rem 3rem 2rem;
+    min-width: 1180px;
+    padding: 7rem 3rem 2rem;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .mainWrap .proList {
@@ -87,6 +208,7 @@ header .menuWrap {}
     display: block;
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition: all .3s;
@@ -123,8 +245,9 @@ header .menuWrap {}
     opacity: 1;
     -webkit-transform: translate(0, -50%) scale(0, 0);
     -moz-transform: translate(0, -50%) scale(0, 0);
+    -ms-transform: translate(0, -50%) scale(0, 0);
     -o-transform: translate(0, -50%) scale(0, 0);
-    transform: translate(0, -50%) scale(0,0);
+    transform: translate(0, -50%) scale(0, 0);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -134,10 +257,12 @@ header .menuWrap {}
 .mainWrap .proList a:hover img {
     -weblit-transform-origin: center center;
     -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
     -o-transform-origin: center center;
     transform-origin: center center;
     -webkit-transform: scale(1.05, 1.05);
     -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
     -o-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
 }
@@ -149,14 +274,15 @@ header .menuWrap {}
 .mainWrap .proList a:hover .view {
     -webkit-transform: translate(0, -50%) scale(1, 1);
     -moz-transform: translate(0, -50%) scale(1, 1);
+    -ms-transform: translate(0, -50%) scale(1, 1);
     -o-transform: translate(0, -50%) scale(1, 1);
     transform: translate(0, -50%) scale(1, 1);
 }
 
 @media screen and (max-width:1200px) {
     #iMain .mainWrap {
-        min-width: 992px;
-        padding: 8rem 2rem 2rem;
+        min-width: 972px;
+        padding: 8rem 1.5rem 2rem;
     }
     .mainWrap .proList li {
         padding: .6rem;
@@ -165,34 +291,35 @@ header .menuWrap {}
 
 @media screen and (max-width:992px) {
     #iMain .mainWrap {
-        min-width: 768px;
-        padding: 8rem 2rem 2rem;
+        min-width: 748px;
+        padding: 8rem 1.4rem 2rem;
     }
     .mainWrap .proList li {
         width: calc(100%/2);
-        padding: .8rem;
+        padding: .7rem;
     }
 }
 
 @media screen and (max-width:768px) {
     #iMain .mainWrap {
-        min-width: 576px;
-        padding: 8rem 1.4rem 1.4rem;
+        min-width: 556px;
+        padding: 8rem 1rem 1.4rem;
     }
 
     .mainWrap .proList li {
         width: calc(100%/2);
-        padding: .6rem;
+        padding: .5rem;
     }
 }
 
 @media screen and (max-width:576px) {
     #iMain .mainWrap {
-        min-width: 320px;
-        padding: 8rem 1.4rem 1.4rem;
+        min-width: 300px;
+        padding: 8rem 1rem 1.4rem;
     }
     .mainWrap .proList li {
         width: 100%;
+        padding: .5rem 0;
     }
 }
 
@@ -205,7 +332,7 @@ footer {
     line-height: 1.6rem;
 }
 
-/*animate zoomIn 修改*/
+/*animate zoomIn 修改===================================================================*/
 
 .animated {
     -webkit-animation-duration: .6s;
@@ -224,10 +351,34 @@ footer {
     }
 }
 
+@-moz-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -moz-transform: scale3d(0.7, 0.7, 0.7);
+        transform: scale3d(0.7, 0.7, 0.7);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -o-transform: scale3d(0.7, 0.7, 0.7);
+        transform: scale3d(0.7, 0.7, 0.7);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
-        -webkit-transform: scale3d(0.7, 0.7, 0.7);
+        -ms-transform: scale3d(0.7, 0.7, 0.7);
         transform: scale3d(0.7, 0.7, 0.7);
     }
 
