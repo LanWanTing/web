@@ -1,0 +1,139 @@
+<!doctype html>
+<html lan="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>訂購需知│芊芳花坊</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <!--bootstrap4 css-->
+    <!--共用css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+    <!--google字型-->
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+    <!--jquery-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--幻燈片-->
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+    <script src="js/slick/slick.min.js"></script>
+    <script>
+        $(function() {
+            $('.slick').slick({
+                dots: true, //顯示輪播圖片會顯示圓圈
+                infinite: true, //重覆輪播
+                slidesToShow: 1, //輪播顯示個數
+                slidesToScroll: 1, //輪播捲動個數
+                autoplay: true, //autoplay : 自動播放
+                autoplaySpeed: 4000, //切換圖片間隔時間
+                fade: true, //淡入淡出
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        dots: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                }, ]
+            });
+        });
+    </script>
+    <!--共用js-->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="pMain">
+        <header id="mainHeader">
+            <button class="toggleBtn">
+            <div class="lineBox"><span class="threeLine lineA1"></span><span class="threeLine lineB1"></span><span class="threeLine lineC1"></span></div>
+        </button>
+            <div class="yLine"></div>
+            <h1><a href="./" title="芊芳花藝" class="logo">芊芳花藝</a></h1>
+            <div class="mainMenu">
+                <ul class="menuBar">
+                    <li><a href="about.html" title="關於芊芳">About Us</a></li>
+                    <li><a href="javascript:;" title="精品花藝">Products</a>
+                        <div class="subBar">
+                            <ul>
+                                <li><a href="product.html" title="贈禮花束">贈禮花束</a></li>
+                                <li><a href="product.html" title="藝術盆花">藝術盆花</a></li>
+                                <li><a href="product.html" title="蘭花盆栽">蘭花盆栽</a></li>
+                                <li><a href="product.html" title="會場佈置">會場佈置</a></li>
+                                <li><a href="product.html" title="高架藝術花籃">高架藝術花籃</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="news.html" title="最新消息">News</a></li>
+                    <li><a href="order.html" title="訂購方式">Order</a></li>
+                    <li><a href="contact.html" title="聯絡我們">Contact Us</a></li>
+                </ul>
+                <div class="searchBtn">search</div>
+                <form class="searchForm">
+                    <input class="searchTxt" type="search" placeholder="" aria-label="Search">
+                    <button class="searchSubmit" type="button" style="box-shadow: rgba(255,255,255,0) 0px 0px 0px 0px;">Submit</button>
+                </form>
+            </div>
+        </header>
+        <!--主選單結束-->
+        <div class="pageWrap">
+            <ul class="orderWrap">
+                <li class="orderList">
+                    <div class="question">我要如何訂花？</div>
+                    <div class="answer">您可以透過以下六種方式訂購本店商品。<br>
+                        <ul class="answer1">
+                            <li>電話訂購
+                                <div>請撥打(07)363-1714</div>
+                            </li>
+                            <li>LINE訂購
+                                <div>將本店加入好友就可以用傳LINE跟我們訂花囉！<br>加入好友的方法<br>方法1：請輸入本店的LINE帳號：@yor5708n加入好友<br>方法2：掃下圖QR碼將我們加入好友。<br></div>
+                            </li>
+                            <li>E-MAIL訂購
+                                <div>請您寫email至，將您要購買的商品還有您的名字與聯絡方式提供給我們，我們收到信後會立即與您聯繫。</div>
+                            </li>
+                            <li>親自來店訂購
+                                <div>本店地址為高雄市楠梓區右昌街187巷33號，歡迎您親自來店洽詢訂購</div>
+                            </li>
+                            <li>網路線上訂購</li>
+                            <li>FACEBOOK訂購</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="orderList">
+                    <div class="question">我要如何付款？</div>
+                    <div class="answer">本店僅提供郵局or銀行匯款。<br>您向本店訂購後，如確認訂單無誤，本店會提供匯款相關資訊給您。</div>
+                </li>
+                <li class="orderList">
+                    <div class="question">請問有配送服務嗎？</div>
+                    <div class="answer">
+                        本店有提供配送服務，僅限於高雄市。<br> 免運費服務範圍為高雄市楠梓區、左營區、鼓山區、新興區、前金區、三民區、鹽埕區、苓雅區、前鎮區、梓官區、燕巢區、大社區、仁武區、橋頭區、彌陀區、岡山區。
+                        <br> 不再免運服務範圍內的其他地區則另外計算運費。
+                        <br> 如有外縣市配送之需求，本店可以協助接單，另轉當地花店服務，詳細可來電洽詢。
+                    </div>
+                </li>
+                <li class="orderList">
+                    <div class="question">我要如何付款？</div>
+                    <div class="answer">本店僅提供郵局or銀行匯款。<br>您向本店訂購後，如確認訂單無誤，本店會提供匯款相關資訊給您。</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {
+        //問與答開合效果
+        $('.question').click(function() {
+            $('.answer').slideUp(400);
+            if (!$(this).next().is(':visible')) {
+                $(this).next().slideDown(400);
+            }
+        });
+    });
+</script>
+
+</html>

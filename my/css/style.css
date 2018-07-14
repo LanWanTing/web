@@ -26,12 +26,34 @@ input:focus {
 
 /*header================================================================================*/
 
+#iMain header {
+    width: 100%;
+    min-height: 4.6rem;
+    background-color: #f7f7f7;
+    position: fixed;
+    z-index: 50;
+    padding: 1.2rem 3.5rem 0;
+}
+
+header h1 {
+    position: relative;
+    width: 85px;
+    height: 36px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    background-size: contain;
+
+    
+}
+
+header .menuWrap {}
+
 /*首頁list================================================================================*/
 
 #iMain {
     width: 100%;
     min-height: 100%;
     background-color: #252525;
+    position: relative;
 }
 
 #iMain .mainWrap {
@@ -102,7 +124,7 @@ input:focus {
     -webkit-transform: translate(0, -50%) scale(0, 0);
     -moz-transform: translate(0, -50%) scale(0, 0);
     -o-transform: translate(0, -50%) scale(0, 0);
-    transform: translate(0, -50%) scale(0, 0);
+    transform: translate(0, -50%) scale(0,0);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -182,32 +204,36 @@ footer {
     padding-top: 2rem;
     line-height: 1.6rem;
 }
-/*animate zoomIn 修改*/
-.animated {
-  -webkit-animation-duration: .6s;
-  animation-duration: .6s;
-}
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.7, 0.7, 0.7);
-    transform: scale3d(0.7, 0.7, 0.7);
-  }
 
-  50% {
-    opacity: 1;
-  }
+/*animate zoomIn 修改*/
+
+.animated {
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.7, 0.7, 0.7);
+        transform: scale3d(0.7, 0.7, 0.7);
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 @keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.7, 0.7, 0.7);
-    transform: scale3d(0.7, 0.7, 0.7);
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.7, 0.7, 0.7);
+        transform: scale3d(0.7, 0.7, 0.7);
+    }
 
-  50% {
-    opacity: 1;
-  }
+    50% {
+        opacity: 1;
+    }
 }
+
 /*test*/

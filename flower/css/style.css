@@ -1,5 +1,5 @@
 /*共用設定*/
-*{ margin: 0; padding: 0;}
+*{ margin: 0; padding: 0; box-sizing: border-box;}
 body,html{width: 100%; height: 100%; background-color: #fff; font-family: 'Roboto','sans-serif','Microsoft JhengHei'; position: relative;}
 button:focus{outline: none;}
 input:focus{outline:none}
@@ -96,8 +96,8 @@ header h1 .logo{display:block; width: 205px; height: 55px; background: url(../im
     .subBar ul{margin: 0 0 0 105px;}
     .searchTxt{ width: 160px;}
 }
-/*寬度768以下*/
-@media screen and (max-width: 768px) {
+/*寬度785以下*/
+@media screen and (max-width: 785px) {
     .mainWrapper{display: block; width: 100%; background: #60235a; position: relative;}
     header {background:none; background-color:#60235a; }
     header h1{position: static; padding: 20px;}

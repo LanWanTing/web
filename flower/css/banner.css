@@ -1,12 +1,176 @@
-#mainContent1{ width: 100%; background: #f4f4f4; box-sizing: border-box; padding: 5% 2%; }/*padding間距需要調整*/
-#mainContent1 h2.t1{text-align: center; font-size: 1.875rem;}/*文字大小需要調整*/
-#mainContent1 h6.t2{text-align: center; font-size: .9rem; font-weight: normal; padding-bottom:15px;}
-#mainContent1 .contentArea{width: 100%; overflow:hidden; margin:0 auto;}
-#mainContent1 .contentBox{display: inline-block; box-sizing: border-box; overflow: hidden; width: 25%;  padding: 15px;}/*padding間距、寬度需要調整*/
-#mainContent1 .contentBox a{display: inline-block; position: relative;  overflow: hidden; text-decoration: none;}
-#mainContent1 .contentBox .cover{display:none; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); position: absolute; left:0; top:0; box-sizing: border-box; padding: 12px;}
-#mainContent1 .txtBox{width: 100%; height: 100%; border: 3px solid #fff; box-sizing: border-box; text-align: center;}
-#mainContent1 .txtBox .txt{ font-size: 20px; color:#fff; position: relative; top:46%; left: 0;}
-#mainContent1 .txtBox .txt p{ margin-bottom:10px;}
-#mainContent1 .txtBox .txt .viewBox{width: 25%; margin: 0 auto; font-size: 15px; color:#fff; border: 1px solid #fff; padding: 5px 0; letter-spacing: 1px;}
-#mainContent1 .contentBox img{width: 100%; display: block; border: 1px solid #f4f4f4;}
+#mainContent1 {
+    width: 100%;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    padding: 5% 2%;
+}
+
+#mainContent1 h2.t1 {
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+#mainContent1 h6.t2 {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+#mainContent1 .contentArea {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#mainContent1 .contentBox {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: calc(100%/4);
+    padding: 15px;
+}
+
+#mainContent1 .contentBox img {
+    width: 100%;
+    display: block;
+}
+
+#mainContent1 .contentBox a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#mainContent1 .contentBox a .cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    opacity: 1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#mainContent1 .contentBox a .cover:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+#mainContent1 .txtBox {
+    position: relative;
+    margin: 0 auto;
+    top: -50%;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#mainContent1 .txtBox:after {
+    content: 'VIEW';
+    display: block;
+    margin: 0 auto;
+    padding: .4rem 0 .2rem;
+    font-size: .9rem;
+    width: 46px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+#mainContent1 .contentBox a:hover .cover {
+    opacity: 1;
+}
+
+@media screen and (max-width:1280px) {
+    #mainContent1 .contentBox {
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (max-width:992px) {
+    #mainContent1 .contentBox {
+        width: calc(100%/3);
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #mainContent1 .contentBox {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width:576px) {
+    #mainContent1 .contentBox {
+        width: calc(100%/2);
+        padding: 10px;
+    }
+    #mainContent1 h2.t1 {
+        font-size: 1.375rem;
+    }
+
+    #mainContent1 h6.t2 {
+        font-size: 0.9rem;
+        padding-bottom: 0.625rem;
+    }
+    #mainContent1 .contentBox a .cover {
+        padding: 10px;
+    }
+    #mainContent1 .txtBox {
+        line-height: 1.25rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+    #mainContent1 .contentBox a .cover:before {
+        border: 2px solid #fff;
+    }
+    #mainContent1 .txtBox:after {
+        padding: .1rem 0 0rem;
+        font-size: .625rem;
+        width: 36px;
+    }
+
+}
+@media screen and (max-width:410px) {
+    #mainContent1 .contentBox {
+        padding: 6px;
+    }
+    #mainContent1 .contentBox a .cover {
+        padding: 6px;
+    }
+    #mainContent1 .txtBox {
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        padding: 0 6px;
+    }
+    #mainContent1 .contentBox a .cover:before {
+        border: 1px solid #fff;
+    }
+    #mainContent1 .txtBox:after {
+        padding: .1rem 0 0rem;
+        font-size: .625rem;
+        width: 34px;
+    }
+}

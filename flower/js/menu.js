@@ -97,7 +97,7 @@ $(function () {
     });
     $(window).resize(function () {
         var viewW = $(window).width();
-        if (viewW > 768) {
+        if (viewW >= 768) {
             $('.toggleBtn').hide();
             $('.lineA1').removeClass('lineA2');
             $('.lineB1').removeClass('lineB2');
