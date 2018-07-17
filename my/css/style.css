@@ -24,13 +24,23 @@ input:focus {
     outline: none;
 }
 
+#iMain {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.iMainH {
+    height: 100%;
+}
+
 /*header================================================================================*/
 
 #iMain header {
     width: 100%;
     min-height: 80px;
     background-color: #f2f2f2;
-    position: fixed;
     z-index: 50;
     padding: .8rem 4rem 0;
     text-indent: -9999px;
@@ -59,6 +69,7 @@ header .menuBtn {
     height: 18px;
     background: #f2f2f2;
     cursor: pointer;
+    z-index: 100;
 }
 
 .menuBtn span {
@@ -162,24 +173,93 @@ header .menuBtn {
         transition: all .5s;
     }
     header .menuBtn {
-        top:1.4rem;
+        top: 1.4rem;
         right: 1rem;
     }
 }
 
+/*選單================================================================================*/
+
+#iMain .menuWrap {
+    position: fixed;
+    display: none;
+    background-color: #f2f2f2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 60;
+    padding: 20% 20% 16%;
+}
+
+.menuWrap .menuBox {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.menuBox .navBox {
+    list-style: none;
+    overflow: hidden;
+}
+
+.navBox li {
+    float: left;
+    width: calc(100%/4);
+    text-align: center;
+}
+
+.navBox li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.8rem;
+}
+
+.navBox li span {
+    font-size: 1rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.navBox li .simpleTtx {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 5px;
+}
+.menuTxt{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+    position: absolute;
+    bottom:10%;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+}
+.menuTxt span{
+    font-size: .8rem;
+    color: #888;
+}
+.fadeInLeft,.fadeInDown {
+animation-duration:1.2s;
+-webkit-animation-duration:1.2s;
+}
 
 /*首頁list================================================================================*/
-
-#iMain {
-    width: 100%;
-    min-height: 100%;
-    position: relative;
-}
 
 #iMain .mainWrap {
     width: 100%;
     min-width: 1180px;
-    padding: 7rem 3rem 2rem;
+    padding: 2rem 3rem 1rem;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -282,7 +362,7 @@ header .menuBtn {
 @media screen and (max-width:1200px) {
     #iMain .mainWrap {
         min-width: 972px;
-        padding: 8rem 1.5rem 2rem;
+        padding: 2rem 1.5rem 1rem;
     }
     .mainWrap .proList li {
         padding: .6rem;
@@ -292,7 +372,7 @@ header .menuBtn {
 @media screen and (max-width:992px) {
     #iMain .mainWrap {
         min-width: 748px;
-        padding: 8rem 1.4rem 2rem;
+        padding: 2rem 1.4rem 1rem;
     }
     .mainWrap .proList li {
         width: calc(100%/2);
@@ -303,7 +383,7 @@ header .menuBtn {
 @media screen and (max-width:768px) {
     #iMain .mainWrap {
         min-width: 556px;
-        padding: 8rem 1rem 1.4rem;
+        padding: 2rem 1rem 1rem;
     }
 
     .mainWrap .proList li {
@@ -315,7 +395,7 @@ header .menuBtn {
 @media screen and (max-width:576px) {
     #iMain .mainWrap {
         min-width: 300px;
-        padding: 8rem 1rem 1.4rem;
+        padding: 2rem 1rem 1.4rem;
     }
     .mainWrap .proList li {
         width: 100%;
@@ -326,19 +406,26 @@ header .menuBtn {
 /*footer================================================================================*/
 
 footer {
-    color: #fff;
+    color: #333;
     text-align: center;
     padding-top: 2rem;
     line-height: 1.6rem;
 }
 
-/*animate zoomIn 修改===================================================================*/
-
-.animated {
-    -webkit-animation-duration: .6s;
-    animation-duration: .6s;
+@media screen and (max-width:768px) {
+    footer {
+        font-size: .8rem;
+        line-height: 1.2rem;
+        letter-spacing: 0;
+    }
 }
 
+/*animate zoomIn 修改===================================================================*/
+
+.zoomIn {
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+}
 @-webkit-keyframes zoomIn {
     from {
         opacity: 0;
