@@ -394,6 +394,9 @@ header .menuBtn {
     -o-transform: translate(0, -50%) scale(1, 1);
     transform: translate(0, -50%) scale(1, 1);
 }
+.mobileHide{
+    display: none
+}
 
 @media screen and (max-width:1200px) {
     #iMain .mainWrap {
@@ -413,6 +416,9 @@ header .menuBtn {
     .mainWrap .proList li {
         width: calc(100%/2);
         padding: .7rem;
+    }
+    .mobileHide{
+    display: block
     }
 }
 
