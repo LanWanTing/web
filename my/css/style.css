@@ -1,5 +1,3 @@
-/*共用設定================================================================================*/
-
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +12,9 @@ html {
     min-height: 100%;
     background-color: #fff;
     font-family: 'Roboto', 'sans-serif', 'Microsoft JhengHei';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
 }
 
 button:focus {
@@ -216,7 +217,6 @@ header .menuBtn {
     width: calc(100%/4);
     text-align: center;
 }
-
 .navBox li a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -228,30 +228,66 @@ header .menuBtn {
     font-size: 1rem;
     color: #888;
     letter-spacing: 1px;
+    transition: all .1s;
+}
+
+.navBox li:hover span {
+    border-bottom: #666 solid 2px;
 }
 
 .navBox li .simpleTtx {
     font-size: 1.5rem;
     color: #333;
     margin: 0 5px;
+    font-weight: normal;
 }
-.menuTxt{
+
+.menuTxt {
     display: block;
     width: 100%;
     font-size: 1rem;
     color: #333;
     position: absolute;
-    bottom:10%;
+    bottom: 10%;
     letter-spacing: 1px;
     line-height: 1.2rem;
 }
-.menuTxt span{
+
+.menuTxt span {
     font-size: .8rem;
     color: #888;
 }
-.fadeInLeft,.fadeInDown {
-animation-duration:1.2s;
--webkit-animation-duration:1.2s;
+
+.fadeInLeft,
+.fadeInDown {
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #iMain .menuWrap {
+        padding: 18rem 20% 16rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #iMain .menuWrap {
+        padding: 18rem 10% 16rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #iMain .menuWrap {
+        padding: 8rem 20% 4rem;
+    }
+    .navBox li {
+        width: 100%;
+        padding:1rem;
+    }
+    .navBox li span {
+        display: none;
+    }
+
 }
 
 /*首頁list================================================================================*/
@@ -426,6 +462,7 @@ footer {
     -webkit-animation-duration: .8s;
     animation-duration: .8s;
 }
+
 @-webkit-keyframes zoomIn {
     from {
         opacity: 0;

@@ -9,6 +9,7 @@ $(function(){
             $('#iMain').addClass('iMainH');
             $('.menuWrap').stop(false, true).slideDown(500);
             $('.navBox').stop(false, true).show();
+            $('.menuTxt').stop(false, true).show();
             off = 0;
         }
         else{
@@ -18,6 +19,7 @@ $(function(){
             $('#iMain').removeClass('iMainH');
             $('.menuWrap').stop(false, true).slideUp(500);
             $('.navBox').stop(false, true).hide();
+            $('.menuTxt').stop(false, true).hide();
             off = 1;
         }
     });
