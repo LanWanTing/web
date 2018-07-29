@@ -1,14 +1,37 @@
 /*about設定================================================================================*/
-.education{
-	position: relative;
-    min-width: 1180px;
-    padding: 2rem 3rem 1rem;
+.aboutWrap{
+    max-width: 1050px;
+    padding: 2rem 0rem 1rem;
     margin: 0 auto;
+}
+.aboutWrap .fullContent{
+    clear: both;
+    padding: 2.5rem 1rem 0;
     overflow: hidden;
+}
+.aboutWrap .leftBox{
+	float: left;
+    width: 50%;
+    padding: 0 1rem;
+}
+.aboutWrap .rightBox{
+	float: right;
+    width: 50%;
+    padding: 0 1rem;
+}
+.aboutTitle{
+    font-size: 1.25rem;
+    line-height: 3rem;
+    font-weight: 600;
+    padding-left: .3rem;
+}
+.education , .work{
+    position: relative;
 }
 .listContent{
 	list-style: none;
 	padding-left: 2rem;
+    overflow: hidden;
 }
 .listContent li{
 	padding-bottom: 1.3rem;
@@ -21,8 +44,8 @@
 .listBox{
 	width: 6px;
 	position: absolute;
-	top:40px;
-	left:4rem;
+	top:8px;
+	left:.8rem;
 }
 .listBox .circle{
 	border-radius: 8px;
@@ -33,9 +56,54 @@
 .listBox .line{
 	width: 1px;
 	height: 80px;
-	margin: 3px auto;
+	margin: 4px auto;
 	background-color: #aaa;
 }
-.listBox .line:last-child{
+.line.h148{
+    height: 148px;
+}
+.line.h105{
+	height: 105px;
+}
+.line.h55{
 	height: 55px;
 }
+.workList{
+    list-style: square;
+	padding-left: 1rem;
+    margin-top: .3rem;
+    margin-left: .2rem;
+    overflow: hidden;
+}
+.listContent .workList li{
+    padding-bottom:0px;
+    color: #484848;
+    line-height: 1.4rem;
+    font-size: .9rem;
+}
+.skillTitle{
+    padding-left: 1.3rem;
+}
+.skillList, .elseList{
+    list-style: disc;
+    overflow: hidden;
+    padding-left: 1.7rem;
+}
+.skillList li, .elseList li{
+	padding-bottom: .3rem;
+}
+.skillList{
+    padding-left: 2.7rem;
+}
+.skillList li{
+    float: left;
+    width: 47.8%;
+}
+.skillList li:nth-of-type(odd){
+    width: 52.2%;
+}
+.clear{clear: both; padding: 2rem 0;}
+
+
+
+

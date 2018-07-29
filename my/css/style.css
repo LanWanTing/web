@@ -214,7 +214,7 @@ header .menuBtn {
 
 .navBox li {
     float: left;
-    width: calc(100%/4);
+    width: calc(100%/5);
     text-align: center;
 }
 
@@ -267,13 +267,13 @@ header .menuBtn {
 
 @media (max-aspect-ratio: 16/9) {
     #iMain .menuWrap {
-        padding: 18rem 20% 16rem;
+        padding: 18rem 14% 16rem;
     }
 }
 
 @media screen and (max-width:1200px) {
     #iMain .menuWrap {
-        padding: 18rem 10% 16rem;
+        padding: 18rem 5% 16rem;
     }
 }
 
@@ -294,7 +294,7 @@ header .menuBtn {
 
 }
 
-/*首頁list================================================================================*/
+/*作品list================================================================================*/
 
 #iMain .mainWrap {
     width: 100%;
@@ -309,6 +309,7 @@ header .menuBtn {
     font-size: 1.6rem;
     line-height: 4rem;
     margin-top: 1rem;
+    font-weight: normal;
 }
 
 .mainWrap .proList {
@@ -327,7 +328,7 @@ header .menuBtn {
     display: block;
     overflow: hidden;
     text-decoration: none;
-    background-color: #252525;
+    background-color: #fff;
     color: #fff;
 }
 
