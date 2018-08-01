@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: 'Roboto', 'sans-serif', 'Microsoft JhengHei';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #252525;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*APP作品介紹=================================================*/
+
+#pMain {
+    width: 100%;
+    min-height: 100%;
+    background-color: #252525;
+    overflow: hidden;
+}
+
+#pMain header {
+    max-width: 640px;
+    min-height: 80px;
+    background-color: #f2f2f2;
+    z-index: 50;
+    padding: 1.1rem 2rem 0;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#pMain header h1 {
+    font-weight: normal;
+    line-height: 3rem;
+    color: #252525;
+    position: relative;
+}
+
+#pMain .pageWrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #252525;
+}
+
+#pMain .pageAPP {
+    width: 100%;
+    max-width: 640px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#pMain .pageAPP img {
+    display: block;
+}
+
+#pMain .pageTxt {
+    width: 100%;
+    max-width: 640px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.pageTxt .txtContent {
+    line-height: 1.5rem;
+}
+
+.pageTxt .txtA {
+    color: #777;
+}
+
+.pageTxt .txtB {
+    color: #252525;
+    padding-top: .8rem;
+    text-align: justify;
+    word-break: break-all;
+}
+
+@media screen and (max-width:576px) {
+    #pMain .pageAPP {
+        min-width: 320px;
+    }
+    #pMain .pageTxt {
+        min-width: 320px;
+        padding: 1.5rem;
+    }
+    .pageTxt .txtContent {
+        line-height: 1.2rem;
+    }
+    .pageTxt .txtA,
+    .pageTxt .txtB {
+        font-size: .875rem;
+    }
+}
+
+/*MENU BACK按鈕--------------------------------------------------------------*/
+
+header .backBtn {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 26px;
+    height: 18px;
+    background: #f2f2f2;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.backBtn span {
+    display: block;
+    background-color: #252525;
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.backBtn span:nth-child(1) {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+}
+
+.backBtn span:nth-child(2) {
+    top: 16px;
+    right: 0;
+    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+}
+
+header .backBtn:hover span{
+    background-color: #888;
+}
