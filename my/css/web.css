@@ -1,136 +1,247 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body,
-html {
+.pWorks {
     width: 100%;
-    min-height: 100%;
-    background-color: #fff;
-    font-family: 'Roboto', 'sans-serif', 'Microsoft JhengHei';
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #252525;
-}
-
-button:focus {
-    outline: none;
-}
-
-input:focus {
-    outline: none;
-}
-
-/*APP作品介紹=================================================*/
-
-#pMain {
-    width: 100%;
-    min-height: 100%;
-    background-color: #252525;
+    position: relative;
+    margin: 0 auto;
     overflow: hidden;
 }
 
-#pMain header {
-    max-width: 640px;
-    min-height: 80px;
-    background-color: #f2f2f2;
-    z-index: 50;
-    padding: 1.1rem 2rem 0;
-    margin: 0 auto;
-    position: relative;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+.pWorks .workPicArea {
+    width: 50%;
 }
 
-#pMain header h1 {
+.pWorks .workPicArea .picBox {
+    width: 100%;
+}
+
+.pWorks .workTxtArea {
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    right: 0;
+    padding: 0 4rem 0 5rem;
+    transform: translate(0, -50%);
+}
+
+.workTxtArea h1 {
     font-weight: normal;
-    line-height: 3rem;
-    color: #252525;
-    position: relative;
+    line-height: 2.5rem;
 }
 
-#pMain .pageWrap {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #252525;
+.workTxtArea h3 {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    color: #888;
 }
 
-#pMain .pageAPP {
-    width: 100%;
-    max-width: 640px;
-    position: relative;
-    margin: 0 auto;
-}
-
-#pMain .pageAPP img {
-    display: block;
-}
-
-#pMain .pageTxt {
-    width: 100%;
-    max-width: 640px;
-    position: relative;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 2rem;
-}
-
-.pageTxt .txtContent {
-    line-height: 1.5rem;
-}
-
-.pageTxt .txtA {
-    color: #777;
-}
-
-.pageTxt .txtB {
-    color: #252525;
-    padding-top: .8rem;
+.workTxtArea .workTxtContent {
+    font-size: 1.25rem;
+    line-height: 2rem;
     text-align: justify;
-    word-break: break-all;
+    padding-bottom: 2rem;
+    padding-right: .5rem;
+}
+
+.workTxtArea .workBackBtn {
+    position: relative;
+    display: block;
+    width: 120px;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 1px;
+    background-color: #252525;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.workSeries {
+    margin-top: 2rem;
+}
+
+.workSeries img {
+    display: block;
+    width: 100%;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.workSeries p {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.workSeries ul {
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+.workSeries li {
+    float: left;
+    width: calc(100%/5);
+    overflow: hidden;
+    padding: .3rem;
+}
+
+.workSeries li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.workSeries li a:hover img {
+    -weblit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+
+@media screen and (max-width:1200px) {
+    .pWorks .workTxtArea {
+        position: fixed;
+        width: 50%;
+        top: 50%;
+        right: 0;
+        padding: 0 3rem;
+        transform: translate(0, -50%);
+    }
+}
+
+@media screen and (max-width:992px) {
+    .pWorks .workTxtArea {
+        padding: 0 2rem;
+    }
+    .workTxtArea .workTxtContent {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding-bottom: 2rem;
+    }
+    .workSeries li {
+        width: calc(100%/4);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .pWorks .workPicArea {
+        width: 100%;
+    }
+    .workTxtArea h1 {
+        font-weight: normal;
+        line-height: 2.5rem;
+    }
+    .workTxtArea h3 {
+        font-weight: normal;
+        line-height: 2.5rem;
+        color: #888;
+    }
+    .pWorks .workTxtArea {
+        position: relative;
+        width: 100%;
+        padding: 2rem;
+        transform: none;
+    }
+    .workSeries li {
+        width: calc(100%/5);
+    }
 }
 
 @media screen and (max-width:576px) {
-    #pMain .pageAPP {
-        min-width: 320px;
+    .workTxtArea h1 {
+        font-weight: normal;
+        line-height: 2rem;
+        font-size: 1.8rem;
     }
-    #pMain .pageTxt {
-        min-width: 320px;
+    .workTxtArea h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 2rem;
+        color: #888;
+    }
+    .pWorks .workTxtArea {
+        position: relative;
+        width: 100%;
         padding: 1.5rem;
+        transform: none;
     }
-    .pageTxt .txtContent {
-        line-height: 1.2rem;
+    .workTxtArea .workTxtContent {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 2rem;
     }
-    .pageTxt .txtA,
-    .pageTxt .txtB {
-        font-size: .875rem;
+    .workTxtArea .workBackBtn {
+        margin: 0 auto;
+        width: 120px;
+        font-size: 1rem;
+        line-height: 2.2rem;
+    }
+    .workSeries li {
+        width: calc(100%/3);
     }
 }
 
-/*MENU BACK按鈕--------------------------------------------------------------*/
+/*workGallery*/
 
-header .backBtn {
-    display: block;
+.workGallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 0 18%;
+    overflow-y: auto;
+    display: none;
+    z-index: 999;
+}
+
+.workGallery .galleryBox {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.galleryBox .picTitle {
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+}
+
+/*關閉*/
+.closeBtn {
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 4rem;
     width: 26px;
     height: 18px;
-    background: #f2f2f2;
+    background: transparent;
     cursor: pointer;
     z-index: 100;
 }
 
-.backBtn span {
+.closeBtn span {
     display: block;
-    background-color: #252525;
+    background-color: #fff;
     position: absolute;
     width: 26px;
     height: 2px;
@@ -143,9 +254,12 @@ header .backBtn {
     -moz-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
-}
 
-.backBtn span:nth-child(1) {
+}
+.workClose span{
+    background-color: #252525;
+}
+.closeBtn span:nth-of-type(1) {
     top: 0;
     right: 0;
     -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
@@ -155,7 +269,7 @@ header .backBtn {
     transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
 }
 
-.backBtn span:nth-child(2) {
+.closeBtn span:nth-of-type(2) {
     top: 16px;
     right: 0;
     -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
@@ -165,6 +279,119 @@ header .backBtn {
     transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
 }
 
-header .backBtn:hover span{
-    background-color: #888;
+.closeBtn:hover {
+    -webkit-animation: closeRotate .3s linear;
+    -moz-animation: closeRotate .3s linear;
+    -o-animation: closeRotate .3s linear;
+    animation: closeRotate .3s linear;
 }
+
+@-webkit-keyframes closeRotate {
+    to {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@-moz-keyframes closeRotate {
+    to {
+        -moz-transform: rotate(180deg);
+    }
+}
+
+@-o-keyframes closeRotate {
+    to {
+        -o-transform: rotate(180deg);
+    }
+}
+
+@keyframes closeRotate {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+/*左右鍵*/
+.rightBtn,.leftBtn {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 26px;
+    height: 56px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 100;
+    transform: translate(0,-50%);
+}
+.rightBtn{
+    right: 12%;
+}
+.leftBtn {
+    left: 12%;
+}
+.rightBtn span, .leftBtn span {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.leftBtn span {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+.rightBtn span:nth-of-type(1) {
+    top: 20px;
+    right: 3px;
+    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+}
+
+.rightBtn span:nth-of-type(2) {
+    top: 36px;
+    right: 3px;
+    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+}
+.leftBtn span:nth-of-type(1) {
+    top: 20px;
+    right: -3px;
+    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+}
+
+.leftBtn span:nth-of-type(2) {
+    top: 36px;
+    right: -3px;
+    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+}
+
+
+
+
+
+
