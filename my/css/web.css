@@ -64,6 +64,9 @@
     cursor: pointer;
     text-decoration: none;
 }
+.workTxtArea .workBackBtn:hover {
+    background-color: #000;
+}
 
 .workSeries {
     margin-top: 2rem;
