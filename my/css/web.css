@@ -5,19 +5,27 @@
     overflow: hidden;
 }
 
-.pWorks .workPicArea {
-    width: 50%;
+.workPicArea {
+    width: 40%;
+    float: right;
+    position: relative;
 }
 
-.pWorks .workPicArea .picBox {
+.workPicArea .picBox {
     width: 100%;
+}
+
+.app2,
+.app3,
+.app4 {
+    display: none;
 }
 
 .pWorks .workTxtArea {
     position: fixed;
-    width: 50%;
+    width: 60%;
     top: 50%;
-    right: 0;
+    left: 0;
     padding: 0 4rem 0 5rem;
     transform: translate(0, -50%);
 }
@@ -30,7 +38,7 @@
 .workTxtArea h3 {
     font-weight: normal;
     font-size: 1.1rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     color: #888;
 }
 
@@ -38,6 +46,7 @@
     font-size: 1.25rem;
     line-height: 2rem;
     text-align: justify;
+    padding-top: .8rem;
     padding-bottom: 2rem;
     padding-right: .5rem;
 }
@@ -87,7 +96,7 @@
 
 .workSeries li {
     float: left;
-    width: calc(100%/5);
+    width: calc(100%/6);
     overflow: hidden;
     padding: .3rem;
 }
@@ -114,13 +123,18 @@
 
 
 @media screen and (max-width:1200px) {
-    .pWorks .workTxtArea {
-        position: fixed;
+    .workPicArea {
         width: 50%;
-        top: 50%;
-        right: 0;
+        float: right;
+        position: relative;
+    }
+    .pWorks .workTxtArea {
+        width: 50%;
         padding: 0 3rem;
-        transform: translate(0, -50%);
+    }
+    .workSeries li {
+
+        width: calc(100%/5);
     }
 }
 
@@ -136,6 +150,13 @@
     .workSeries li {
         width: calc(100%/4);
     }
+    .workTxtArea h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .workTxtArea h3 {
+        line-height: 1.5rem;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -144,17 +165,17 @@
     }
     .workTxtArea h1 {
         font-weight: normal;
-        line-height: 2.5rem;
+        line-height: 2.2rem;
     }
     .workTxtArea h3 {
         font-weight: normal;
-        line-height: 2.5rem;
+        line-height: 1.8rem;
         color: #888;
     }
     .pWorks .workTxtArea {
         position: relative;
         width: 100%;
-        padding: 2rem;
+        padding: 5.5rem 2rem 2rem;
         transform: none;
     }
     .workSeries li {
@@ -163,22 +184,12 @@
 }
 
 @media screen and (max-width:576px) {
-    .workTxtArea h1 {
-        font-weight: normal;
-        line-height: 2rem;
-        font-size: 1.8rem;
-    }
     .workTxtArea h3 {
         font-size: 1rem;
-        font-weight: normal;
-        line-height: 2rem;
-        color: #888;
+        line-height: 1.6rem;
     }
     .pWorks .workTxtArea {
-        position: relative;
-        width: 100%;
-        padding: 1.5rem;
-        transform: none;
+        padding: 5.5rem 1.5rem 1.5rem;
     }
     .workTxtArea .workTxtContent {
         font-size: 1rem;
@@ -186,7 +197,6 @@
         padding-bottom: 2rem;
     }
     .workTxtArea .workBackBtn {
-        margin: 0 auto;
         width: 120px;
         font-size: 1rem;
         line-height: 2.2rem;
@@ -194,44 +204,62 @@
     .workSeries li {
         width: calc(100%/3);
     }
+    .workTxtArea h1 {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
 }
 
-/*workGallery*/
+/*fancybox*/
 
-.workGallery {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .8);
-    padding: 0 18%;
-    overflow-y: auto;
-    display: none;
-    z-index: 999;
+.fancybox-skin {
+    border-radius: 0px;
 }
 
-.workGallery .galleryBox {
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
-    display: none;
-}
-
-.galleryBox .picTitle {
-    text-align: center;
-    color: #fff;
+.fancybox-title-float-wrap .child {
+    background: transparent;
+    text-shadow: none;
+    font-weight: normal;
     font-size: 1.25rem;
-    line-height: 2rem;
-    padding-top: 1rem;
+    font-family: 'Roboto', 'sans-serif', 'Microsoft JhengHei';
+    letter-spacing: 1px;
+}
+
+.fancybox-close {
+    top: -40px;
+    right: -0px;
+}
+
+/*左右按鈕*/
+
+.fancybox-nav {
+    width: 60px;
+    height: 100%;
+}
+
+.fancybox-nav span {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.fancybox-nav:hover span {
+    opacity: 1;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
 }
 
 /*關閉*/
+
 .closeBtn {
-    position: absolute;
+    position: fixed;
     top: 2rem;
-    right: 4rem;
+    left: 5rem;
     width: 26px;
     height: 18px;
     background: transparent;
@@ -254,144 +282,100 @@
     -moz-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
-
 }
-.workClose span{
+
+.workClose span {
     background-color: #252525;
 }
+
 .closeBtn span:nth-of-type(1) {
+    width: 16px;
     top: 0;
     right: 0;
-    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    -webkit-transform: rotate(-45deg) translateY(-3.5px) translateX(-5.5px);
+    -moz-transform: rotate(-45deg) translateY(-6.5px) translateX(-5.5px);
+    -ms-transform: rotate(-45deg) translateY(-6.5px) translateX(-5.5px);
+    -o-transform: rotate(-45deg) translateY(-6.5px) translateX(-5.5px);
+    transform: rotate(-45deg) translateY(-7.5px) translateX(-11.5px);
 }
 
 .closeBtn span:nth-of-type(2) {
+    width: 16px;
     top: 16px;
     right: 0;
     -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
     -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
     -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
     -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+    transform: rotate(45deg) translateY(7px) translateX(-10px);
 }
 
-.closeBtn:hover {
-    -webkit-animation: closeRotate .3s linear;
-    -moz-animation: closeRotate .3s linear;
-    -o-animation: closeRotate .3s linear;
-    animation: closeRotate .3s linear;
+.closeBtn span:nth-of-type(3) {
+    top: 8px;
+    right: 0;
 }
 
-@-webkit-keyframes closeRotate {
-    to {
-        -webkit-transform: rotate(180deg);
+.closeBtn:hover span:nth-of-type(3) {
+    width: 40px;
+    right: -14px;
+}
+
+@media screen and (max-width:1200px) {
+    .closeBtn {
+        left: 3rem;
     }
 }
 
-@-moz-keyframes closeRotate {
-    to {
-        -moz-transform: rotate(180deg);
+@media screen and (max-width:992px) {
+    .closeBtn {
+        left: 2rem;
     }
 }
 
-@-o-keyframes closeRotate {
-    to {
-        -o-transform: rotate(180deg);
+@media screen and (max-width:768px) {
+    .closeBtn {
+        position: absolute;
     }
 }
 
-@keyframes closeRotate {
-    to {
-        transform: rotate(180deg);
+@media screen and (max-width:576px) {
+    .closeBtn {
+        left: 1.5rem;
     }
 }
 
-/*左右鍵*/
-.rightBtn,.leftBtn {
-    position: absolute;
+/*app圖切換*/
+
+.workPicArea .workApp {
+    padding: 1rem;
+    position: fixed;
+    bottom: .5rem;
+    right: .5rem;
+}
+
+.workApp ul {
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+}
+
+.workApp li {
+    float: left;
+    width: 36px;
+    text-align: center;
+    color: #fff;
+    padding: 0 2px;
+    cursor: pointer
+}
+
+.workApp li b {
+    font-weight: normal;
     display: block;
-    top: 50%;
-    width: 26px;
-    height: 56px;
-    background: transparent;
-    cursor: pointer;
-    z-index: 100;
-    transform: translate(0,-50%);
-}
-.rightBtn{
-    right: 12%;
-}
-.leftBtn {
-    left: 12%;
-}
-.rightBtn span, .leftBtn span {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    width: 26px;
-    height: 2px;
-    -webkit-transform-origin: right center;
-    -moz-transform-origin: right center;
-    -ms-transform-origin: right center;
-    -o-transform-origin: right center;
-    transform-origin: right center;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.leftBtn span {
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -ms-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-}
-.rightBtn span:nth-of-type(1) {
-    top: 20px;
-    right: 3px;
-    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: rgba(0, 0, 0, .6);
 }
 
-.rightBtn span:nth-of-type(2) {
-    top: 36px;
-    right: 3px;
-    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
+.workApp li:hover b {
+    background-color: rgba(0, 0, 0, 1);
 }
-.leftBtn span:nth-of-type(1) {
-    top: 20px;
-    right: -3px;
-    -webkit-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -moz-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -ms-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    -o-transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-    transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
-}
-
-.leftBtn span:nth-of-type(2) {
-    top: 36px;
-    right: -3px;
-    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    -moz-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    -ms-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    -o-transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-    transform: rotate(45deg) translateY(-6px) translateX(-5.5px);
-}
-
-
-
-
-
-
