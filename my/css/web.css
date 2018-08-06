@@ -51,25 +51,48 @@
     padding-right: .5rem;
 }
 
-.workTxtArea .workBackBtn {
-    position: relative;
+.workBtnBox {
+    width: 190px;
+    overflow: hidden;
+}
+
+.workPrevBtn,
+.workNextBtn {
+    float: left;
     display: block;
-    width: 120px;
-    font-size: 1rem;
-    line-height: 2.5rem;
+    width: 90px;
     text-align: center;
-    color: #FFF;
-    letter-spacing: 1px;
-    background-color: #252525;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    letter-spacing: 1px;
+    color: #FFF;
+    background-color: #252525;
 }
-.workTxtArea .workBackBtn:hover {
+
+.workPrevBtn {
+    top: 0;
+    left: 0;
+}
+
+.workNextBtn {
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+.btnNo {
+    background-color: #555;
+}
+
+.workPrevBtn:hover,
+.workNextBtn:hover {
     background-color: #000;
 }
 
 .workSeries {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .workSeries img {
@@ -101,7 +124,8 @@
     float: left;
     width: calc(100%/6);
     overflow: hidden;
-    padding: .3rem;
+    padding: .5rem;
+    padding-left: 0;
 }
 
 .workSeries li a {
@@ -183,6 +207,9 @@
     }
     .workSeries li {
         width: calc(100%/5);
+    }
+    .workBtnBox {
+        margin: 0 auto;
     }
 }
 
@@ -354,6 +381,7 @@
     position: fixed;
     bottom: .5rem;
     right: .5rem;
+    display: none;
 }
 
 .workApp ul {
