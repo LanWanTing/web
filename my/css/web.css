@@ -111,6 +111,7 @@
 
 .workSeries p {
     font-size: 1.1rem;
+    padding-bottom: .5rem;
     color: #888;
 }
 
@@ -122,30 +123,25 @@
 
 .workSeries li {
     float: left;
-    width: calc(100%/6);
-    overflow: hidden;
-    padding: .5rem;
+    padding: .6rem;
     padding-left: 0;
+    text-align: center;
 }
-
 .workSeries li a {
-    display: block;
     text-decoration: none;
-    padding-left: 0;
-    overflow: hidden;
+    padding: .5rem .7rem;
+    color: #252525;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    word-break: keep-all;
 }
 
-.workSeries li a:hover img {
-    -weblit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform: scale(1.05, 1.05);
-    -moz-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
-    -o-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
+.workSeries li:hover a {
+    color: #fff;
+    background-color: #252525;
+    border: 1px solid #252525;
+    border-radius: 2px;
 }
 
 
@@ -159,10 +155,6 @@
         width: 50%;
         padding: 0 3rem;
     }
-    .workSeries li {
-
-        width: calc(100%/5);
-    }
 }
 
 @media screen and (max-width:992px) {
@@ -173,9 +165,6 @@
         font-size: 1.2rem;
         line-height: 1.8rem;
         padding-bottom: 2rem;
-    }
-    .workSeries li {
-        width: calc(100%/4);
     }
     .workTxtArea h1 {
         font-size: 1.8rem;
@@ -205,9 +194,6 @@
         padding: 5.5rem 2rem 2rem;
         transform: none;
     }
-    .workSeries li {
-        width: calc(100%/5);
-    }
     .workBtnBox {
         margin: 0 auto;
     }
@@ -230,9 +216,6 @@
         width: 120px;
         font-size: 1rem;
         line-height: 2.2rem;
-    }
-    .workSeries li {
-        width: calc(100%/3);
     }
     .workTxtArea h1 {
         font-size: 1.4rem;
@@ -283,6 +266,7 @@
 .fancybox-prev {
     left: -60px;
 }
+
 
 /*關閉*/
 
@@ -381,7 +365,7 @@
     position: fixed;
     bottom: .5rem;
     right: .5rem;
-    display: none;
+    display: block;
 }
 
 .workApp ul {
@@ -409,4 +393,10 @@
 
 .workApp li:hover b {
     background-color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width:768px) {
+    .workPicArea .workApp {
+        display: none;
+    }
 }
