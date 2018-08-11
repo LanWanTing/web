@@ -44,7 +44,18 @@ $(function () {
     } else {
         $('.workApp').show();
     }
-    $(window).resize(function(){
-       location.reload(); 
+    var previousDimensions = {
+        width: $(window).width(),
+        height: $(window).height()
+    }
+    $(window).resize(function () {
+        var newDimensions = {
+            width: $(window).width(),
+            height: $(window).height()
+        }
+        if (newDimensions.height > previousDimensions.height) {
+            location.reload();
+        }
+        previousDimensions = newDimensions
     });
 });
